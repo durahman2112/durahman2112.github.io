@@ -65,7 +65,7 @@ footer p,a,li{
 }
 .fixed-bottom {
     position: sticky;
-    top: 0;
+    
 }
 
 @media screen and (max-width: 1000px){
