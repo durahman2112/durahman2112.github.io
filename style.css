@@ -39,7 +39,7 @@ main{
 }
 footer{
     margin-top: 30px;
-    bottom:0;
+    margin-bottom:70px;
 }
 .footersatu{
     background: #f7f7f7;
@@ -73,5 +73,8 @@ footer p,a,li{
     }
     .form{
         margin-top: 20px;
+    }
+    footer{
+        margin-bottom: 70px !important;
     }
 }

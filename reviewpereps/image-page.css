@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans';
+
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: #FFFFFF;
+}
+.gambar-bg img{
+    position: absolute;
+    width: 1080px;
+    height: 71px;
+    top: 1009px;
+    
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+
+
+/* Rectangle 29 */
+
+.footer{
+    position: absolute;
+    width: 1080px;
+    height: 71px;
+    left: 0px;
+    top: 1009px;
+
+    background: rgba(255, 102, 0, 0.6);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+.gambar-content img{
+    position: absolute;
+    width: 1080px;
+    height: 504px;
+    left: 0px;
+    top: 0px;
+
+    background: #C4C4C4;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+.gambar-content2 img{
+    position: absolute;
+    width: 1080px;
+    height: 505px;
+    left: 0px;
+    top: 504px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+.lensa{
+    position: absolute;
+    height: 0px;
+    left: 62px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.2em;
+    
+    color: #FFFFFF;
+}
+
+
+
+/* FOLLOW FOR MORE ANIME CONTENT */
+
+.follow{
+    position: absolute;
+    height: 0px;
+    left: 300px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    /* identical to box height, or 0% */
+    
+    
+    color: #FFFFFF;
+}
+
+
+
+/* admin */
+
+.admin{
+    position: absolute;
+    height: 0px;
+    left: 777px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    color: #FFFFFF;
+}
+
+
+
+/* icon */
+
+.icon{
+    position: absolute;
+    width: 100px;
+    height: 16.15px;
+    left: 918px;
+    top: 1037px;
+}
+
+/* linebreak */
+
+.linebreak{
+    position: absolute;
+    width: 65px;
+    height: 0;
+    left: 225px;
+    top: 1039px;
+    
+    border: 1px solid #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+
+/* bulet */
+
+.bulet{
+    position: absolute;
+    left: 977px;
+    top: 470px;
+}
+
+
+.logo{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 62px;
+    top: 36px;
+}
