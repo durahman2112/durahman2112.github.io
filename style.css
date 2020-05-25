@@ -86,5 +86,6 @@ footer p,a,li{
         bottom:0;
         right: 0;
         left: 0;
+        top: auto;
     }
 }
