@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans';
+
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: #FFFFFF;
+}
+
+
+
+/* position: absolute;
+width: 1080px;
+height: 1080px;
+left: 0px;
+top: 0px;
+
+background: #FAFAFA;
+backdrop-filter: blur(50px);
+Note: backdrop-filter has minimal browser support */
+
+
+
+/* img-char */
+
+.img-char{
+    position: absolute;
+    width: 730px;
+    height: 1080px;
+    left: 350px;
+    top: 0px;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: left;
+}
+
+
+/* white-box */
+
+.white-box{
+    position: absolute;
+    width: 1080px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 94.17%);
+    border-radius: 10px;
+}
+
+
+/* nama */
+
+.nama{
+    position: absolute;
+    width: 436px;
+    height: 41px;
+    left: 62px;
+    top: 885px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 113.18%;
+    /* identical to box height, or 41px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+
+
+
+/* judul-anime */
+
+.judul-anime{
+    position: absolute;
+    width: 436px;
+    height: 41px;
+    left: 62px;
+    top: 926px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 113.18%;
+    /* or 27px */
+    
+    text-transform: uppercase;
+    
+    /* black */
+    
+    color: #212121;
+}
+
+
+/* kutip */
+
+.kutip{
+    position: absolute;
+    width: 129px;
+    height: 176px;
+    left: 189px;
+    top: 128px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 288px;
+    line-height: 113.18%;
+    /* or 326px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+
+
+
+/* LENSA.ANIMEME */
+
+.lensa{
+    position: absolute;
+    width: 168px;
+    height: 0px;
+    left: 62px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.2em;
+    
+    /* black */
+    
+    color: #212121;
+}
+
+
+/* bg-judul-content */
+
+.bg-judul-content{
+    position: absolute;
+    width: 236px;
+    height: 50px;
+    left: 782px;
+    top: 63px;
+    
+    background: #FF6600;
+    border-radius: 10px;
+}
+
+.judul-content{
+    /* LENSACHARA */
+    
+    
+    position: absolute;
+    width: 172px;
+    height: 33px;
+    left: 814px;
+    top: 72px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #FFFFFF;
+}
+.admin{
+    position: absolute;
+    left: 254px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    /* black */
+    
+    color: #212121;
+}
+.icon{
+    position: absolute;
+    width: 100px;
+    height: 16.15px;
+    left: 383px;
+    top: 1037px;
+}
+.bulet{
+    position: absolute;
+    width: 40.12px;
+    height: 139.24px;
+    left: 977.12px;
+    top: 836px;
+}
+
+.logo{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 62px;
+    top: 36px;
+}
+
+
+/* quote */
+
+.quote{
+    position: absolute;
+    width: 460px;
+    height: 499px;
+    left: 62px;
+    top: 316px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    
+    /* black */
+    
+    color: #212121;
+}
