@@ -6,13 +6,13 @@ function loadHTML(name) {
             return `
             <div class="cover">
                 <div class="gambar">
-                    <img src="kny.jpg" alt="" srcset="">
+                    <img src="news/kny.jpg" alt="" srcset="">
                 </div>
                 <div class="footer">
 
                 </div>
                 <div class="white-box"></div>
-                <p class="title">
+                <p id="title" class="title">
                         MANGA ENEN NO SHOUBOUTAI SUDAH MENDEKATI AKHIR
                 </p>
                 <p class="desc">
@@ -75,10 +75,20 @@ function changeTemplate(name) {
             preview.innerHTML = loadHTML('home')
 
             let container = preview.children[0]
-            container.style = 'transform: scale(.366);translate: -352px -352px;'
+            container.style = `
+                -webkit-transform: scale(.366);
+                -ms-transform: scale(.366);
+                transform: scale(.366);
+                translate: -352px -352px;
+            `
             break;
     
         default:
             break;
     }
+}
+function preview(caller){
+    let e = document.getElementById('ipt_title')
+    document.querySelector('.preview .title').innerHTML = e.value
+    console.log(e);
 }

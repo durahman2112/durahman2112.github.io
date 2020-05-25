@@ -77,8 +77,8 @@
                 <div class="col-sm-6 form">
                         <form>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Judul</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
+                                <label for="ipt_title">Judul</label>
+                                <input type="text" class="form-control" id="ipt_title">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Deskripsi</label>
@@ -93,15 +93,15 @@
                                 <input type="test" class="form-control" id="exampleInputPassword1">
                                 <small id="emailHelp" class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
                             </div>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-eye fa-sm"></i>
-                                &nbsp;Preview
-                            </button>
-                            <button type="submit" class="btn btn-outline-success">
-                                <i class="fas fa-download"></i>
-                                &nbsp;Download
-                            </button>
                         </form>
+                        <button class="btn btn-primary" onclick="preview(this)">
+                            <i class="fas fa-eye fa-sm"></i>
+                            &nbsp;Preview
+                        </button>
+                        <button type="submit" class="btn btn-outline-success">
+                            <i class="fas fa-download"></i>
+                            &nbsp;Download
+                        </button>
                 </div>
             </div>
             
@@ -134,9 +134,6 @@
 
         <p class="copy">Copyright &copy; Lensa.Animeme 2020 | Created by Hoshi & Kazu1chi</p>
     </footer>
-    
-<div id="storage"></div>
-
 
 
 
