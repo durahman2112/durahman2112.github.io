@@ -2,7 +2,7 @@ let nowTemplate
 
 function loadHTML(name) {
     switch (name) {
-        case 'home':
+        case 'home':            
             return `
             <div class="cover">
                 <div class="gambar">
@@ -54,7 +54,8 @@ function loadHTML(name) {
 }
 function changeTemplate(name) {
     let head = document.head,
-        preview = document.getElementById('preview')
+        preview = document.getElementById('preview'),
+        storage = document.getElementById('storage')
     
     if(nowTemplate == name){
         return;
