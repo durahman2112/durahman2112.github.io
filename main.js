@@ -91,4 +91,16 @@ function preview(caller){
     let e = document.getElementById('ipt_title')
     document.querySelector('.preview .title').innerHTML = e.value
     console.log(e);
+
+    document.querySelector("#preview .cover").style = ''
+    html2canvas(document.querySelector("#preview .cover")).then(canvas => {
+        document.body.appendChild(canvas)
+    })
+    document.querySelector("#preview .cover").style = `
+        -webkit-transform: scale(.366);
+        -ms-transform: scale(.366);
+        transform: scale(.366);
+        translate: -352px -352px;
+    `
+    
 }
