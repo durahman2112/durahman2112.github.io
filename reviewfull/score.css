@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans';
+
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: #FFFFFF;
+}
+.gambar img{
+    position: absolute;
+    width: 649px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+.footer{
+    position: absolute;
+    width: 71px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    
+    background: rgba(255, 102, 0, 0.6);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+.white-box{
+    position: absolute;
+    width: 431px;
+    height: 1080px;
+    left: 649px;
+    top: 0px;
+    
+    background: #FFFFFF;
+}
+.logo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 111px;
+    top: 49px;
+}
+
+/* LENSA.ANIMEME */
+
+.lensa{
+    position: absolute;
+    left: -46px;
+    top: 920px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+
+    transform: rotate(-90deg);
+}
+
+
+
+/* FOLLOW FOR MORE ANIME CONTENT */
+
+.follow{
+    position: absolute;
+    left: -105px;
+    top: 620px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+
+
+    color: #FFFFFF;
+
+    transform: rotate(-90deg);
+}
+
+
+
+/* admin */
+
+.admin{
+    position: absolute;
+    left: -11px;
+    top: 266px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+
+    text-align: right;
+    letter-spacing: 0.13em;
+
+    color: #FFFFFF;
+
+    transform: rotate(-90deg);
+}
+
+
+
+/* icon */
+
+.icon img{
+    position: absolute;
+    width: 100px;
+    left: -15px;
+    top: 122px;
+
+    transform: rotate(-90deg);
+}
+
+
+
+/* linebreak */
+
+.linebreak{
+    position: absolute;
+    width: 71px;
+    height: 0px;
+    top: 800px;
+
+    border: 3px solid #FFFFFF;
+    transform: rotate(-180deg)
+}
+
+.title{
+    position: absolute;
+    width: 397px;
+    height: 52px;
+    left: 669px;
+    top: 321px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 113.18%;
+    /* or 41px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* black */
+
+    color: #212121;
+}
+
+.bg-score{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    left: 794px;
+    top: 132px;
+}
+
+/* title-news */
+.score{
+    position: absolute;
+    width: 154px;
+    height: 79px;
+    left: 791px;
+    top: 173px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 113.18%;
+    /* or 61px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.star{
+    position: absolute;
+    width: 188.85px;
+    height: 39.8px;
+    left: 773.08px;
+    top: 426px;
+}
+.bg-story{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 743px;
+    top: 523px;
+}
+.bg-chara{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 892px;
+    top: 523px;
+}
+.bg-art{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 748px;
+    top: 690px;
+    
+}
+.bg-sound{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 897px;
+    top: 690px;
+}
+.bg-enjoy{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 823px;
+    top: 863px;
+}
+.story{
+    position: absolute;
+    width: 82px;
+    height: 42px;
+    left: 750px;
+    top: 553px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.chara{
+    position: absolute;
+    width: 82px;
+    height: 42px;
+    left: 899px;
+    top: 553px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.art{
+    position: absolute;
+    width: 82px;
+    height: 42px;
+    left: 755px;
+    top: 720px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.sound{
+    position: absolute;
+    width: 82px;
+    height: 42px;
+    left: 904px;
+    top: 720px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    
+}
+.enjoy{
+    position: absolute;
+    width: 82px;
+    height: 42px;
+    left: 830px;
+    top: 893px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.pstory{
+    position: absolute;
+    width: 149px;
+    height: 46px;
+    left: 716px;
+    top: 619px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #212121;
+}
+.pchara{
+    position: absolute;
+    width: 149px;
+    height: 46px;
+    left: 865px;
+    top: 619px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    color: #212121;
+}
+.part{
+    position: absolute;
+    width: 149px;
+    height: 46px;
+    left: 721px;
+    top: 786px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    color: #212121;
+}
+.psound{
+    position: absolute;
+    width: 149px;
+    height: 46px;
+    left: 870px;
+    top: 786px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    color: #212121;
+}
+.penjoy{
+    position: absolute;
+    width: 149px;
+    height: 46px;
+    left: 796px;
+    top: 959px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    color: #212121;
+}

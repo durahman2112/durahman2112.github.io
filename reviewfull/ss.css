@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans';
+
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: #FFFFFF;
+}
+
+/* Isekai.wa.Smartphone.to.Tomo.ni..full 1 */
+img{
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+.gambar img{
+    position: absolute;
+    width: 1080px;
+    height: 1080px;
+    top: 0px;
+
+    
+}
+
+/* footer */
+
+.footer{
+    position: absolute;
+    width: 1080px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    
+    background: rgba(255, 102, 0, 0.6);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+.img-1{
+    position: absolute;
+    width: 469px;
+    height: 270px;
+    left: 71px;
+    top: 0px;
+    
+    background: #C4C4C4;
+}
+.img-2{
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 469px;
+    height: 270px;
+    left: 71px;
+    top: 270px;
+    
+    background: #FFFFFF;
+}
+.img-3{
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 469px;
+    height: 270px;
+    left: 71px;
+    top: 540px;
+    
+    background: #C4C4C4;
+}
+.img-4{
+    position: absolute;
+    width: 469px;
+    height: 270px;
+    left: 71px;
+    top: 810px;
+    
+    background: #FFFFFF;
+}
+.img-5{
+
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 470px;
+    height: 270px;
+    left: 540px;
+    top: 0px;
+    
+    background: #FFFFFF;
+}
+.img-6{
+    
+    
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 470px;
+    height: 270px;
+    left: 540px;
+    top: 270px;
+    
+    background: #C4C4C4;
+}
+.img-7{
+    
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 470px;
+    height: 270px;
+    left: 540px;
+    top: 540px;
+    
+    background: #FFFFFF;
+}
+
+.img-8{
+    /* Rectangle 31 */
+    
+    
+    position: absolute;
+    width: 470px;
+    height: 270px;
+    left: 540px;
+    top: 810px;
+    
+    background: #C4C4C4;
+}
+
+
+/* logo */
+
+.logo{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 99px;
+    top: 37px;
+
+}
+
+
+
+/* Rectangle 38
+
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 402px;
+top: 614px; */
+
+/* orange */
+
+/* background: #FF6600; */
+
+
+/* LENSA.ANIMEME */
+
+.lensa{
+    position: absolute;
+    width: 168px;
+    height: 0px;
+    left: -49px;
+    top: 925px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.2em;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-90deg);
+}
+
+
+/* FOLLOW FOR MORE ANIME CONTENT */
+
+.follow{
+    position: absolute;
+    left: -105px;
+    top: 636px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-90deg);
+}
+
+
+/* icon */
+
+.icon img{
+    position: absolute;
+    width: 100px;
+    height: 16.15px;
+    left: -15px;
+    top: 162px;
+    
+    transform: rotate(-90deg);
+}
+
+
+/* linebreak */
+
+.linebreak{
+    position: absolute;
+    width: 71px;
+    height: 0px;
+    left: 0px;
+    top: 813px;
+    
+    border: 3px solid #FFFFFF;
+    transform: rotate(-180deg);
+}
+
+
+/* admin */
+
+.admin{
+    position: absolute;
+    width: 100px;
+    left: 995px;
+    bottom: 120px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-90deg);
+}
