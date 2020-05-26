@@ -30,13 +30,13 @@ function loadHTML(name) {
                 by hoshi
             </p>
             <div class="icon">
-                <img src="icon.png" alt="" srcset="">
+                <img src="news/icon.png" alt="" srcset="">
             </div>
             <div class="linebreak">
     
             </div>
             <div class="bulet">
-                <img src="bulet.png" alt="">
+                <img src="news/bulet.png" alt="">
             </div>
             <div class="logo">
                 <img src="logo.png" alt="" srcset="">
