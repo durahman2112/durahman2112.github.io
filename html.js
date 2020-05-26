@@ -2,9 +2,9 @@ function loadHTML(name) {
     switch (name) {
         case 'news':            
             return `
-            <div class="cover">
-            <div class="gambar" style="background-position: center;background-size: cover;">
-                <img src="news/kny.jpg" alt="" srcset="">
+        <div class="cover">
+            <div class="gambar">
+                <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
             <div class="footer">
     
