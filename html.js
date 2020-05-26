@@ -3,7 +3,7 @@ function loadHTML(name) {
         case 'news':            
             return `
             <div class="cover">
-            <div class="gambar">
+            <div class="gambar" style="background-position: center;background-size: cover;">
                 <img src="news/kny.jpg" alt="" srcset="">
             </div>
             <div class="footer">
@@ -64,7 +64,7 @@ function loadHTML(name) {
                 <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
             </div>
         </form>
-        <button class="btn btn-primary" onclick="preview('#title', '.title')">
+        <button class="btn btn-primary" onclick="preview('#title', '.title')" data-toggle="modal" data-target="#modal_preview">
             <i class="fas fa-eye fa-sm"></i>
             &nbsp;Preview
         </button>
