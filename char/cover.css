@@ -123,6 +123,18 @@ body{
     
     color: #212121;
 }
+.linename{
+
+position: absolute;
+width: 277px;
+height: 0px;
+left: 402px;
+top: 927px;
+
+/* orange */
+
+border: 2px solid #FF6600;
+}
 .bg-judul-content{
     position: absolute;
     width: 236px;
