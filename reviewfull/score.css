@@ -19,7 +19,7 @@ body{
     position: absolute;
     width: 649px;
     height: 1080px;
-    left: 0px;
+    left: 71px;
     top: 0px;
 
     object-fit: cover;
@@ -147,7 +147,7 @@ body{
     height: 0px;
     top: 800px;
 
-    border: 3px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     transform: rotate(-180deg)
 }
 
