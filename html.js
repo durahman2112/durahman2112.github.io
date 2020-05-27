@@ -50,21 +50,21 @@ function loadHTML(name) {
                 <input type="text" class="form-control" id="title">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">News nya</label>
-                <textarea class="form-control" id="exampleInputPassword1"></textarea>
+                <label for="desc">News nya</label>
+                <textarea class="form-control" id="desc"></textarea>
             </div>
             
             <div class="form-group">
-                <label for="exampleInputEmail1">Pilih gambar</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile">
+                <label for="gambar">Pilih gambar</label>
+                <input type="file" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview .gambar > img')">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Admin</label>
-                <input type="test" class="form-control" id="exampleInputPassword1">
+                <label for="admin">Admin</label>
+                <input type="test" class="form-control" id="admin">
                 <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
             </div>
         </form>
-        <button class="btn btn-primary" onclick="preview('#title', '.title')" data-toggle="modal" data-target="#modal_preview">
+        <button class="btn btn-primary" onclick="preview()" data-toggle="modal" data-target="#modal_preview">
             <i class="fas fa-eye fa-sm"></i>
             &nbsp;Preview
         </button>

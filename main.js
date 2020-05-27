@@ -1,11 +1,11 @@
-let nowTemplate
+let nowTemplate,
+    previewContent
 
 changeTemplate('news')
 
 function changeTemplate(name) {
     let head = document.head,
-        preview = document.getElementById('preview'),
-        storage = document.getElementById('storage')
+        preview = document.getElementById('preview')
     
     if(nowTemplate == name){
         return;
@@ -29,19 +29,33 @@ function changeTemplate(name) {
             break;
     }
 }
-function preview(ipt, txt){
+function preview_image(event, output){
+    let reader = new FileReader(),
+        outputE = document.querySelector(output)
+    reader.onload = function(){
+        outputE.src = reader.result
+    }
+    reader.readAsDataURL(event.target.files[0])
+}
+function preview(){
     console.log('preview');
-
-    let input = document.querySelector('#form '+ipt),
-        text = document.querySelector('#preview '+txt),
-        modal_preview = document.getElementById('modal_preview'),
-        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
-        node = document.querySelector("#preview > div")
+    let formElems = document.querySelectorAll('#form input, textarea')
+    for (let i = 0; i < formElems.length; i++) {
+        let e = formElems[i],
+            previewE = document.querySelector('#preview .' + e.id)
         
-    text.innerHTML = input.value
-    console.log('node:', node);
+        if(e.type != 'file'){
+            previewE.innerHTML = e.value   
+        }
+    }
     
-    domtoimage.toPng(node)
+    // return ;
+    previewContent = document.querySelector('#preview > div')
+
+    let modal_preview = document.getElementById('modal_preview'),
+        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
+        
+    domtoimage.toPng(previewContent)
         .then(function (dataUrl) {
             // var img = new Image();
             // img.src = dataUrl;
@@ -54,9 +68,12 @@ function preview(ipt, txt){
         });
 }
 function download(){
+    preview()
+
     let date = new Date(),
         dateFormat = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes()
-    domtoimage.toBlob(document.querySelector('#preview > div'))
+        
+    domtoimage.toBlob(previewContent)
         .then(function (blob){
             window.saveAs(blob, dateFormat + '.png')
         })
