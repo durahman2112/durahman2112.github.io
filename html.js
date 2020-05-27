@@ -82,12 +82,12 @@ function loadHTML(name) {
             return `
             <div class="cover">
                 <div class="gambar">
-                    <img src="poster.jpeg" alt="" srcset="">
+                    <img src="char/poster.jpeg" alt="" srcset="">
                 </div>
                 <div class="footer">
 
                 </div>
-                <img src="char.png" alt="" class="img-char">
+                <img src="char/char.png" alt="" class="img-char">
                 <div class="white-box"></div>
                 <p class="nama">
                     sato Mafuyu
@@ -119,17 +119,17 @@ function loadHTML(name) {
                     by hoshi
                 </p>
                 <div class="icon">
-                    <img src="icon-white.png" alt="" srcset="">
+                    <img src="char/icon-white.png" alt="" srcset="">
                 </div>
                 <div class="linebreak">
 
                 </div>
 
                 <div class="bulet">
-                    <img src="bulet-white.png" alt="">
+                    <img src="char/bulet-white.png" alt="">
                 </div>
                 <div class="logo">
-                    <img src="logo.png" alt="" srcset="">
+                    <img src="char/logo.png" alt="" srcset="">
                 </div>
 
                 <div class="node-1"></div>

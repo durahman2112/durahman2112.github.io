@@ -4,14 +4,14 @@ let nowTemplate,
 changeTemplate('news')
 
 function changeTemplate(name) {
-    let head = document.head,
+    let linkTemplate = document.getElementById('linkTemplate'),
         preview = document.getElementById('preview')
     
     if(nowTemplate == name){
         return;
     }
     nowTemplate = name
-    console.log(head, nowTemplate);
+    console.log(linkTemplate, nowTemplate);
     
     let link_css = document.createElement('link')
     switch (name) {
@@ -20,16 +20,18 @@ function changeTemplate(name) {
             link_css.rel = 'stylesheet'
             link_css.href = 'news/news.css'
             
-            document.getElementById('linkTemplate').appendChild(link_css)
+            linkTemplate.innerHTML = ''
+            linkTemplate.appendChild(link_css)
             preview.innerHTML = loadHTML('news')
             break;
 
         case 'char':
             link_css.id = 'char.css'
             link_css.rel = 'stylesheet'
-            link_css.href = 'char/char.css'
+            link_css.href = 'char/cover.css'
             
-            head.appendChild(link_css)
+            linkTemplate.innerHTML = ''
+            linkTemplate.appendChild(link_css)
             preview.innerHTML = loadHTML('char')
             break;
     
