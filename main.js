@@ -13,16 +13,24 @@ function changeTemplate(name) {
     nowTemplate = name
     console.log(head, nowTemplate);
     
+    let link_css = document.createElement('link')
     switch (name) {
         case 'news':
-            let link_css = document.createElement('link')
-
             link_css.id = 'news.css'
             link_css.rel = 'stylesheet'
             link_css.href = 'news/news.css'
             
-            head.appendChild(link_css)
+            document.getElementById('linkTemplate').appendChild(link_css)
             preview.innerHTML = loadHTML('news')
+            break;
+
+        case 'char':
+            link_css.id = 'char.css'
+            link_css.rel = 'stylesheet'
+            link_css.href = 'char/char.css'
+            
+            head.appendChild(link_css)
+            preview.innerHTML = loadHTML('char')
             break;
     
         default:

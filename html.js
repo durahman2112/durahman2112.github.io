@@ -6,9 +6,10 @@ function loadHTML(name) {
             <div class="gambar">
                 <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
-            <div class="footer">
+            <img class="footer" src="../../blur/blur (1).png">
+<!--             <div class="footer">
     
-            </div>
+            </div> -->
             <div class="white-box"></div>
             <p class="title">
                     MANGA ENEN NO SHOUBOUTAI SUDAH MENDEKATI AKHIR
@@ -74,6 +75,68 @@ function loadHTML(name) {
             &nbsp;Download
         </button>
         -->
+            `
+            break;
+
+        case 'char':
+            return `
+            <div class="cover">
+                <div class="gambar">
+                    <img src="poster.jpeg" alt="" srcset="">
+                </div>
+                <div class="footer">
+
+                </div>
+                <img src="char.png" alt="" class="img-char">
+                <div class="white-box"></div>
+                <p class="nama">
+                    sato Mafuyu
+                </p>
+                <p class="judul-anime">
+                    given
+                </p>
+                <p class="kanji">
+                    佐藤 真冬
+                </p>
+                <p class="jk">Male</p>
+                <p class="tgl">February 28</p>
+                <p class="age">
+                    18 Y.O
+                </p>
+                <p class="tall">173cm</p>
+                <p class="seiyuu">Yano Shougo</p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    lensachar
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by hoshi
+                </p>
+                <div class="icon">
+                    <img src="icon-white.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+
+                </div>
+
+                <div class="bulet">
+                    <img src="bulet-white.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="logo.png" alt="" srcset="">
+                </div>
+
+                <div class="node-1"></div>
+                <div class="node-2"></div>
+                <div class="node-3"></div><div class="node-4"></div>
+
+            </div>
             `
             break;
     
