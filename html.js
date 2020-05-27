@@ -57,7 +57,7 @@ function loadHTML(name) {
             
             <div class="form-group">
                 <label for="gambar">Pilih gambar</label>
-                <input type="file" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview .gambar > img')">
+                <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview .gambar > img')">
             </div>
             <div class="form-group">
                 <label for="author">Admin</label>
@@ -169,7 +169,7 @@ function loadHTML(name) {
                 </div>
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview img.img-char')">
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview img.img-char')">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
