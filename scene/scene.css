@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2 !important;
+    font-family: 'Open Sans';
+}
+.cover{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+
+    background: rgba(0, 0, 0, 0);
+}
+.gambar{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+.white-box{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 88.24%);
+}
+.title{
+    position: absolute;
+    width: 753px;
+    height: 52px;
+    left: 482px;
+    top: 840px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 113.18%;
+    /* or 57px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+.episode{
+    position: absolute;
+    width: 182px;
+    height: 112px;
+    left: 1256px;
+    top: 830px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 113.18%;
+    /* or 109px */
+    
+    text-align: right;
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+.scene{
+    position: absolute;
+    width: 185px;
+    height: 40px;
+    left: 482px;
+    top: 801px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+.eps{
+    position: absolute;
+    width: 182px;
+    height: 40px;
+    left: 1256px;
+    top: 801px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #FF6600;
+}    
+.genre{
+    position: absolute;
+    width: 643px;
+    height: 104px;
+    left: 482px;
+    top: 892px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: capitalize;
+    
+    /* black */
+    
+    color: #212121;
+}
+.logo{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 482px;
+    top: 54px;
+}
+.lensa{
+    position: absolute;
+    width: 168px;
+    height: 0px;
+    left: 482px;
+    top: 1037px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.2em;
+    
+    /* black */
+    
+    color: #212121;
+}
+.follow{
+    position: absolute;
+    height: 0px;
+    left: 720px;
+    top: 1037px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    
+    /* black */
+    
+    color: #212121;
+}
+
+.admin{
+    position: absolute;
+    height: 0px;
+    left: 1197px;
+    top: 1037px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    /* black */
+    
+    color: #212121;
+}
+.icon{
+    position: absolute;
+    width: 100px;
+    height: 16.15px;
+    left: 1338px;
+    top: 1029px;
+}

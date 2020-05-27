@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background: #f2f2f2;
+    background: #f2f2f2 !important;
     font-family: 'Open Sans';
 
 }
@@ -23,7 +23,6 @@ body{
     position: absolute;
     width: 1080px;
     height: 356px;
-    left: -195px;
     top: 724px;
 
     object-fit: cover;

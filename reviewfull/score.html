@@ -7,60 +7,121 @@
     <title>Review Full | Score</title>
     <link rel="shortcut icon" href="logo.png">
     <link rel="stylesheet" href="score.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div class="cover">
-        <div class="gambar">
-            <img src="kny.jpg" alt="" srcset="">
-        </div>
-        <div class="footer">
-
-        </div>
-        <div class="white-box"></div>
-        <img src="bg-score.png" alt="" class="bg-score">
-        <p class="score">8.1</p>
-        <p class="title">
-            yakusoku no neverland
-        </p>
-        <img src="star.png" alt="" class="star">
-        <img src="bg-miniscore.png" alt="" class="bg-story">
-        <p class="story">8.1</p>
-        <p class="pstory">Story</p>
-        <img src="bg-miniscore.png" alt="" class="bg-chara">
-        <p class="chara">8.2</p>
-        <p class="pchara">Chara</p>
-        <img src="bg-miniscore.png" alt="" class="bg-art">
-        <p class="art">8.7</p>
-        <p class="part">Grafis</p>
-        <img src="bg-miniscore.png" alt="" class="bg-sound">
-        <p class="sound">8.6</p>
-        <p class="psound">sound</p>
-        <img src="bg-miniscore.png" alt="" class="bg-enjoy">
-        <p class="enjoy">8.0</p>
-        <p class="penjoy">Enjoy</p>
-        
-        
-        
-        <p class="lensa">
-            lensa.animeme
-        </p>
-        <p class="follow">
-            follow for more anime content!
-        </p>
-        <p class="admin">
-            by hoshi
-        </p>
-        <div class="icon">
-            <img src="icon.png" alt="" srcset="">
-        </div>
-        <div class="linebreak">
-
-        </div>
-        <div class="logo">
-            <img src="logo.png" alt="" srcset="">
-        </div>
-
-    </div>
+    <div class="container">
+        <div class="cover">
+            <div class="gambar">
+                <img src="kny.jpg" alt="" srcset="">
+            </div>
+            <div class="footer">
     
+            </div>
+            <div class="white-box"></div>
+            <img src="bg-score.png" alt="" class="bg-score">
+            <p class="score">8.1</p>
+            <p class="title">
+                yakusoku no neverland
+            </p>
+            <img src="star.png" alt="" class="star">
+            <img src="bg-miniscore.png" alt="" class="bg-story">
+            <p class="story">8.1</p>
+            <p class="pstory">Story</p>
+            <img src="bg-miniscore.png" alt="" class="bg-chara">
+            <p class="chara">8.2</p>
+            <p class="pchara">Chara</p>
+            <img src="bg-miniscore.png" alt="" class="bg-art">
+            <p class="art">8.7</p>
+            <p class="part">Grafis</p>
+            <img src="bg-miniscore.png" alt="" class="bg-sound">
+            <p class="sound">8.6</p>
+            <p class="psound">sound</p>
+            <img src="bg-miniscore.png" alt="" class="bg-enjoy">
+            <p class="enjoy">8.0</p>
+            <p class="penjoy">Enjoy</p>
+            
+            
+            
+            <p class="lensa">
+                lensa.animeme
+            </p>
+            <p class="follow">
+                follow for more anime content!
+            </p>
+            <p class="admin">
+                by hoshi
+            </p>
+            <div class="icon">
+                <img src="icon.png" alt="" srcset="">
+            </div>
+            <div class="linebreak">
+    
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="" srcset="">
+            </div>
+    
+        </div>
+<br>
+
+        <form action="" id="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Judul News</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Story</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Chara</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Grafis</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Sound</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="form-group col">
+                    <label for="exampleInputEmail1">Enjoy</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nilai Overview (Hasil rata - rata semua)</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1">Pilih gambar</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Admin</label>
+                <input type="test" class="form-control" id="exampleInputPassword1">
+                <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-eye fa-sm"></i>
+                &nbsp;Preview
+            </button>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="fas fa-download"></i>
+                &nbsp;Download
+            </button>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

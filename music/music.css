@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2 !important;
+    font-family: 'Open Sans';
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: #FFFFFF;
+}
+/* white-circle */
+
+.white-circle{
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    left: 295px;
+    top: 202px;
+    border-radius: 100%;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.14);
+}
+.img-music{
+    position: absolute;
+    width: 452px;
+    height: 452px;
+    left: 314px;
+    top: 221px;
+    border-radius: 100%;
+    
+    background: #F2F2F2;
+}
+.title{
+    position: absolute;
+    width: 753px;
+    height: 52px;
+    left: 62px;
+    top: 866px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 113.18%;
+    /* or 57px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+.singer{
+    position: absolute;
+    width: 185px;
+    height: 40px;
+    left: 62px;
+    top: 827px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 113.18%;
+    /* or 34px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+
+.anime{
+    position: absolute;
+    width: 643px;
+    height: 50px;
+    left: 62px;
+    top: 926px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: capitalize;
+    
+    /* black */
+    
+    color: #212121;
+}
+
+
+.logo{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 62px;
+    top: 36px;
+}
+.lensa{
+    position: absolute;
+    height: 0px;
+    left: 62px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.2em;
+    
+    color: #212121;
+}
+.follow{
+    position: absolute;
+    height: 0px;
+    left: 300px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    /* identical to box height, or 0% */
+    
+    
+    color: #212121;
+}
+.admin{
+    position: absolute;
+    height: 0px;
+    left: 777px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    color: #212121;
+}
+.icon{
+    position: absolute;
+    width: 100px;
+    height: 16.15px;
+    left: 918px;
+    top: 1037px;
+}
+
+.line{
+    position: absolute;
+    width: 1080px;
+    height: 0px;
+    left: 0px;
+    top: 1009px;
+    
+    /* orange */
+    
+    border: 1px solid #FF6600;
+}
+.bulet{
+    position: absolute;
+    left: 977px;
+    top: 825px;
+}
