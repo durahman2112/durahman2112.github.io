@@ -27,7 +27,7 @@ function loadHTML(name) {
                 follow for more anime content!
             </p>
             <p class="admin">
-                by hoshi
+                by <span class="author">hoshi</span>
             </p>
             <div class="icon">
                 <img src="news/icon.png" alt="" srcset="">
@@ -59,9 +59,9 @@ function loadHTML(name) {
                 <input type="file" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview .gambar > img')">
             </div>
             <div class="form-group">
-                <label for="admin">Admin</label>
-                <input type="test" class="form-control" id="admin">
-                <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
+                <label for="author">Admin</label>
+                <input type="test" class="form-control" id="author">
+                <!-- <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
             </div>
         </form>
         <button class="btn btn-primary" onclick="preview()" data-toggle="modal" data-target="#modal_preview">

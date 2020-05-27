@@ -45,7 +45,7 @@ function preview(){
             previewE = document.querySelector('#preview .' + e.id)
         
         if(e.type != 'file'){
-            previewE.innerHTML = e.value   
+            previewE.innerHTML = e.value
         }
     }
     
@@ -71,10 +71,16 @@ function download(){
     preview()
 
     let date = new Date(),
-        dateFormat = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes()
+        dateFormat = date.getDate() + '' + date.getMonth() + '' + date.getFullYear(),
+        fileName = document.querySelector('p.judul-content').innerHTML.replace(/\s+/g, '').toUpperCase() + '_' + dateFormat
         
+        console.log(
+            fileName
+        );
+        
+    // return;
     domtoimage.toBlob(previewContent)
         .then(function (blob){
-            window.saveAs(blob, dateFormat + '.png')
+            window.saveAs(blob, fileName + '.png')
         })
 }
