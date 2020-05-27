@@ -33,6 +33,11 @@ function changeTemplate(name) {
             add_link_css(name)
             preview.innerHTML = loadHTML(name)
             break;
+
+        case 'char/quote':
+            add_link_css(name)
+            preview.innerHTML = loadHTML(name)
+            break;
     
         default:
             break;

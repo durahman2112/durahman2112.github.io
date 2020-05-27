@@ -180,8 +180,83 @@ function loadHTML(name) {
             </form>
             `
             break;
+
+        case 'char/quote':
+            return `
+            <div class="cover scale">
+                <img src="char/IMG_20200523_222055-removebg-preview.png" alt="" class="img-char">
+                <div class="white-box"></div>
+                <p class="kutip">"</p>
+                <p class="nama">
+                    sato Mafuyu
+                </p>
+                <p class="judul-anime">
+                    given
+                </p>
+                <p class="quote"> Meski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap berlanjut dari kabaran sudah berjalan 36 menit, ditargetkan selesai 3 tahun mendatangMeski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap </p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    lensachar
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="admin">
+                    by <span class="author">dun</span>
+                </p>
+                <div class="icon">
+                    <img src="char/icon-black.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+        
+                <div class="bulet">
+                    <img src="char/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="char/logo.png" alt="" srcset="">
+                </div>
+        
+                <div class="node-1"></div>
+                <div class="node-2"></div>
+                <div class="node-3"></div><div class="node-4"></div>
+        
+            </div>
+    
+    
+            <br>
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="nama">Nama Karakter</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="judul-anime">Anime</label>
+                    <input type="text" class="form-control" id="judul-anime">
+                </div>
+                <div class="form-group">
+                    <label for="quote">Deskripsi Karakter</label>
+                    <textarea class="form-control" id="quote"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="img-char">Pilih gambar</label>
+                    <input type="file" accept="image/*" class="form-control-file" id="img-char" onchange="preview_image(event, '#preview img.img-char')">
+                    <small class="form-text text-muted">Diharuskan gambar PNG yang transparan ya gaes!</small>
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                    <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
+                </div>
+            </form>
+            `
+            break;
     
         default:
             break;
     }
+    // accept="image/*" 
+    // onchange="preview_image(event, '#preview img.img-char')"
 }
