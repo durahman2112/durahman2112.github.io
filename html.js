@@ -6,7 +6,7 @@ function loadHTML(name) {
             <div class="gambar">
                 <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
-            <img class="footer" src="../../blur/blur (1).png">
+            <img class="footer" src="../../blur/blur.png">
 <!--             <div class="footer">
     
             </div> -->
