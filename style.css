@@ -88,4 +88,10 @@ footer p,a,li{
         left: 0;
         top: auto;
     }
+    .cover{
+        transform: translateX(-350px) scale(0.3,0.3);
+        margin-top: -350px;
+        margin-bottom: -350px;
+    }
+    }
 }
