@@ -68,7 +68,7 @@ function loadHTML(name) {
             <i class="fas fa-eye fa-sm"></i>
             &nbsp;Preview
         </button>
-        <button class="btn btn-outline-success" onclick="()">
+        <button class="btn btn-outline-success" onclick="download()">
             <i class="fas fa-download"></i>
             &nbsp;Download
         </button>

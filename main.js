@@ -1,5 +1,7 @@
 let nowTemplate
 
+changeTemplate('news')
+
 function changeTemplate(name) {
     let head = document.head,
         preview = document.getElementById('preview'),
@@ -33,37 +35,16 @@ function preview(ipt, txt){
     let input = document.querySelector('#form '+ipt),
         text = document.querySelector('#preview '+txt),
         modal_preview = document.getElementById('modal_preview'),
-        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
+        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
+        node = document.querySelector("#preview > div")
         
     text.innerHTML = input.value
-    // console.log(input, text, document.querySelector("#preview > div"));
-
-    var node = document.querySelector("#preview > div");
-
     console.log('node:', node);
-    
-    // html2canvas(node).then(canvas => {
-    //     document.body.appendChild(canvas)
-    // });
-    // html2canvas(document.querySelector("#preview > div")).then(canvas => {
-    //     document.body.appendChild(canvas)
-    // });
-
-    // document.getElementById('form').style.display = 'none'
-    // html2canvas(document.body).then(function(canvas) {
-    //     modal_preview_body.innerHTML = ''
-    //     // console.log(canvas.classList += ' img-fluid');
-    //     // canvas.style = 'position: absolute;top:0;left:0;'
-    //     document.body.appendChild(canvas);
-    //     // modal_preview_body.innerHTML += `<img class='img-fluid' src='${canvas.toDataURL()}'>`
-
-    //     document.getElementById('form').style.display = ''
-    // });
     
     domtoimage.toPng(node)
         .then(function (dataUrl) {
-            var img = new Image();
-            img.src = dataUrl;
+            // var img = new Image();
+            // img.src = dataUrl;
             // document.body.appendChild(img);
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
@@ -71,4 +52,12 @@ function preview(ipt, txt){
         .catch(function (error) {
             console.error('oops, something went wrong!', error);
         });
+}
+function download(){
+    let date = new Date(),
+        dateFormat = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes()
+    domtoimage.toBlob(document.querySelector('#preview > div'))
+        .then(function (blob){
+            window.saveAs(blob, dateFormat + '.png')
+        })
 }
