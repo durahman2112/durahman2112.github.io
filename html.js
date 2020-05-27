@@ -2,7 +2,7 @@ function loadHTML(name) {
     switch (name) {
         case 'news':            
             return `
-        <div class="cover">
+        <div class="cover scale">
             <div class="gambar">
                 <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
@@ -68,10 +68,12 @@ function loadHTML(name) {
             <i class="fas fa-eye fa-sm"></i>
             &nbsp;Preview
         </button>
+        <!--
         <button class="btn btn-outline-success" onclick="download()">
             <i class="fas fa-download"></i>
             &nbsp;Download
         </button>
+        -->
             `
             break;
     

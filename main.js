@@ -55,6 +55,7 @@ function preview(){
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
         
+    previewContent.classList.remove('scale')
     domtoimage.toPng(previewContent)
         .then(function (dataUrl) {
             // var img = new Image();
@@ -62,25 +63,22 @@ function preview(){
             // document.body.appendChild(img);
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
+            previewContent.classList.add('scale')
         })
         .catch(function (error) {
             console.error('oops, something went wrong!', error);
         });
 }
-function download(){
-    preview()
+// function download(){
+//     preview()
 
-    let date = new Date(),
-        dateFormat = date.getDate() + '' + date.getMonth() + '' + date.getFullYear(),
-        fileName = document.querySelector('p.judul-content').innerHTML.replace(/\s+/g, '').toUpperCase() + '_' + dateFormat
+//     let date = new Date(),
+//         dateFormat = date.getDate() + '' + date.getMonth() + '' + date.getFullYear(),
+//         fileName = document.querySelector('p.judul-content').innerHTML.replace(/\s+/g, '').toUpperCase() + '_' + dateFormat
         
-        console.log(
-            fileName
-        );
-        
-    // return;
-    domtoimage.toBlob(previewContent)
-        .then(function (blob){
-            window.saveAs(blob, fileName + '.png')
-        })
-}
+//     // return;
+//     domtoimage.toBlob(previewContent)
+//         .then(function (blob){
+//             window.saveAs(blob, fileName + '.png')
+//         })
+// }
