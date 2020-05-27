@@ -54,6 +54,8 @@ function preview(){
         let e = formElems[i],
             previewE = document.querySelector('#preview .' + e.id)
         
+            console.log(e, previewE);
+            
         if(e.type != 'file'){
             previewE.innerHTML = e.value
         }

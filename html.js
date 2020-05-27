@@ -6,7 +6,7 @@ function loadHTML(name) {
             <div class="gambar">
                 <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
-            <img class="footer" src="../../blur/blur.png">
+            <img class="footer" src="blur/blur.png">
 <!--             <div class="footer">
     
             </div> -->
@@ -65,27 +65,17 @@ function loadHTML(name) {
                 <!-- <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
             </div>
         </form>
-        <button class="btn btn-primary" onclick="preview()" data-toggle="modal" data-target="#modal_preview">
-            <i class="fas fa-eye fa-sm"></i>
-            &nbsp;Preview
-        </button>
-        <!--
-        <button class="btn btn-outline-success" onclick="download()">
-            <i class="fas fa-download"></i>
-            &nbsp;Download
-        </button>
-        -->
             `
             break;
 
         case 'char':
             return `
-            <div class="cover">
+            <div class="cover scale">
                 <div class="gambar">
                     <img src="char/poster.jpeg" alt="" srcset="">
                 </div>
                 <div class="footer">
-
+        
                 </div>
                 <img src="char/char.png" alt="" class="img-char">
                 <div class="white-box"></div>
@@ -98,6 +88,7 @@ function loadHTML(name) {
                 <p class="kanji">
                     佐藤 真冬
                 </p>
+            <div class="linename"></div>
                 <p class="jk">Male</p>
                 <p class="tgl">February 28</p>
                 <p class="age">
@@ -116,27 +107,76 @@ function loadHTML(name) {
                     follow for more anime content!
                 </p>
                 <p class="admin">
-                    by hoshi
+                    by <span class="author">hoshi</span>
                 </p>
                 <div class="icon">
                     <img src="char/icon-white.png" alt="" srcset="">
                 </div>
                 <div class="linebreak">
-
+        
                 </div>
-
+        
                 <div class="bulet">
                     <img src="char/bulet-white.png" alt="">
                 </div>
                 <div class="logo">
                     <img src="char/logo.png" alt="" srcset="">
                 </div>
-
+        
                 <div class="node-1"></div>
                 <div class="node-2"></div>
                 <div class="node-3"></div><div class="node-4"></div>
-
+        
             </div>
+    <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="judul-anime">Anime</label>
+                    <input type="text" class="form-control" id="judul-anime">
+                </div>
+                <div class="form-group">
+                    <label for="kanji">Kanji</label>
+                    <input type="text" class="form-control" id="kanji">
+                </div>
+                <div class="form-group">
+                    <label for="jk">Jenis Kelamin</label>
+                    <input type="text" class="form-control" id="jk">
+                    <small class="form-text text-muted">Male / Female</small>
+                </div>
+                <div class="form-group">
+                    <label for="tgl">Birthday</label>
+                    <input type="text" class="form-control" id="tgl">
+                    <small class="form-text text-muted">example : December 21</small>
+                </div>
+                <div class="form-group">
+                    <label for="age">Umur</label>
+                    <input type="text" class="form-control" id="age">
+                    <small class="form-text text-muted">example : 18 Y.O</small>
+                </div>
+                <div class="form-group">
+                    <label for="tall">Tinggi</label>
+                    <input type="text" class="form-control" id="tall">
+                    <small class="form-text text-muted">example : 173 cm</small>
+                </div>
+                <div class="form-group">
+                    <label for="seiyuu">Seiyuu</label>
+                    <input type="text" class="form-control" id="seiyuu">
+                </div>
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar</label>
+                    <input type="file" class="form-control-file" id="gambar" onchange="preview_image(event, '#preview img.img-char')">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                    <!-- <small id="emailHelp" class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
+                </div>
+            </form>
             `
             break;
     
