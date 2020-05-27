@@ -1,6 +1,6 @@
 function loadHTML(name) {
     switch (name) {
-        case 'news':            
+        case 'news/news':            
             return `
         <div class="cover scale">
             <div class="gambar">
@@ -68,7 +68,8 @@ function loadHTML(name) {
             `
             break;
 
-        case 'char':
+    // char/
+        case 'char/cover':
             return `
             <div class="cover scale">
                 <div class="gambar">

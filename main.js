@@ -1,11 +1,21 @@
 let nowTemplate,
     previewContent
 
-changeTemplate('news')
+changeTemplate('news/news')
 
-function changeTemplate(name) {
+function add_link_css(name) {
     let linkTemplate = document.getElementById('linkTemplate'),
-        preview = document.getElementById('preview')
+        link = document.createElement('link')
+
+    link.id = name + '.css'
+    link.rel = 'stylesheet'
+    link.href = link.id
+    
+    linkTemplate.innerHTML = ''
+    linkTemplate.appendChild(link)
+}
+function changeTemplate(name) {
+    let preview = document.getElementById('preview')
     
     if(nowTemplate == name){
         return;
@@ -13,26 +23,15 @@ function changeTemplate(name) {
     nowTemplate = name
     console.log(linkTemplate, nowTemplate);
     
-    let link_css = document.createElement('link')
     switch (name) {
-        case 'news':
-            link_css.id = 'news.css'
-            link_css.rel = 'stylesheet'
-            link_css.href = 'news/news.css'
-            
-            linkTemplate.innerHTML = ''
-            linkTemplate.appendChild(link_css)
-            preview.innerHTML = loadHTML('news')
+        case 'news/news':
+            add_link_css(name)
+            preview.innerHTML = loadHTML(name)
             break;
 
-        case 'char':
-            link_css.id = 'char.css'
-            link_css.rel = 'stylesheet'
-            link_css.href = 'char/cover.css'
-            
-            linkTemplate.innerHTML = ''
-            linkTemplate.appendChild(link_css)
-            preview.innerHTML = loadHTML('char')
+        case 'char/cover':
+            add_link_css(name)
+            preview.innerHTML = loadHTML(name)
             break;
     
         default:
