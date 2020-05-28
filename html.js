@@ -1355,7 +1355,7 @@ function loadHTML(name) {
             return `
                 <div class="cover scale">
                 <div class="gambar">
-                    <img src="bg.png" alt="" srcset="">
+                    <img src="news/bg.png" alt="" srcset="">
                 </div>
                 <div class="white-box"></div>
                 <p class="title">
