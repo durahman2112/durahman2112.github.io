@@ -1352,7 +1352,7 @@ function loadHTML(name) {
             break;
     //pv
         case 'news/pv' :
-            return '
+            return `
                 <div class="cover scale">
                 <div class="gambar">
                     <img src="bg.png" alt="" srcset="">
@@ -1384,7 +1384,7 @@ function loadHTML(name) {
                         <input type="test" class="form-control" id="author">
                     </div>
                 </form>
-            '
+            `
             break;
         default:
             break;
