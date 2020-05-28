@@ -35,7 +35,6 @@ body{
 }
 .title{
     position: absolute;
-    width: 753px;
     height: 52px;
     left: 482px;
     top: 840px;
@@ -53,7 +52,6 @@ body{
 }
 .episode{
     position: absolute;
-    width: 182px;
     height: 112px;
     left: 1256px;
     top: 830px;
@@ -109,7 +107,6 @@ body{
 }    
 .genre{
     position: absolute;
-    width: 643px;
     height: 104px;
     left: 482px;
     top: 892px;
