@@ -21,7 +21,7 @@ body{
 .gambar img{
     position: absolute;
     width: 1080px;
-    height: 1080px;
+    height: 1020px;
     top: 0px;
 
     object-fit: cover;
