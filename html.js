@@ -1350,7 +1350,42 @@ function loadHTML(name) {
             </form>
             `
             break;
+    //pv
+        case 'news/pv' :
+            return '
+                <div class="cover scale">
+                <div class="gambar">
+                    <img src="bg.png" alt="" srcset="">
+                </div>
+                <div class="white-box"></div>
+                <p class="title">
+                    Promosi Video anime Yakusoku No Neverland season 2!
+                </p>
+                <p class="desc">
+                    Yakusoku No Neverland season 2 direncanakan akan rilis pada bulan Januari 2021 atau Winter 2020. Anime yang menceritakan kelanjutan kisah Emma dkk untuk bebas dari dunia iblis
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
 
+                </div>
+                <br>
+                <form action="" id="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Judul News</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">News nya</label>
+                        <textarea class="form-control" id="desc"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Admin</label>
+                        <input type="test" class="form-control" id="author">
+                    </div>
+                </form>
+            '
+            break;
         default:
             break;
     }
