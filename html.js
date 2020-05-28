@@ -58,7 +58,7 @@ function loadHTML(name) {
             
             <div class="form-group">
                 <label for="gambar">Pilih gambar</label>
-                <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
+                <input type="file" class="form-control-file" id="gambar">
             </div>
             <div class="form-group">
                 <label for="author">Admin</label>
@@ -114,7 +114,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="img-content">Pilih gambar Poster</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="img-content" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="img-content" >
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -181,7 +181,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="gambar" >
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Admin</label>
@@ -227,7 +227,7 @@ function loadHTML(name) {
             <form action="" id="form">
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="gambar" >
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -339,7 +339,7 @@ function loadHTML(name) {
                 </div>
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="gambar" >
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -410,7 +410,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="gambar">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -482,7 +482,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="img-char">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="img-char" onchange="preview_image(event)">
+                    <input type="file" class="form-control-file" id="img-char" >
                     <small class="form-text text-muted">Diharuskan gambar PNG yang transparan ya gaes!</small>
                 </div>
                 <div class="form-group">

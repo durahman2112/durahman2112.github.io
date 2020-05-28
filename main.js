@@ -15,7 +15,8 @@ function add_link_css(name) {
     linkTemplate.appendChild(link)
 }
 function changeTemplate(name) {
-    let preview = document.getElementById('preview')
+    let preview = document.getElementById('preview'),
+        input_file
     
     if(nowTemplate == name){
         return;
@@ -24,6 +25,10 @@ function changeTemplate(name) {
     add_link_css(name)
     preview.innerHTML = loadHTML(name)
     preview.children[0].classList.add('scale')
+
+    input_file= document.querySelector("#preview input[type='file']")
+    input_file.accept = 'image/*'
+    input_file.onchange = function (){preview_image(event)}
 
     console.log(linkTemplate, nowTemplate);
 }
