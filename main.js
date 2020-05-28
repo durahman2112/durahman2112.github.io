@@ -1,7 +1,7 @@
 let nowTemplate,
     previewContent
 
-changeTemplate('char/char-desc')
+changeTemplate('news/news')
 
 function add_link_css(name) {
     let linkTemplate = document.getElementById('linkTemplate'),
@@ -31,13 +31,12 @@ function preview_image(event, output){
     let reader = new FileReader(),
         outputE = document.querySelectorAll('#preview ' + output)
 
-        reader.onload = function(){
-            outputE.forEach(e => {
-                    e.src = reader.result
-            })
-        }
-        reader.readAsDataURL(event.target.files[0])
-        
+    reader.onload = function(){
+        outputE.forEach(e => {
+                e.src = reader.result
+        })
+    }
+    reader.readAsDataURL(event.target.files[0])
 }
 function preview(){
     console.log('preview');

@@ -1,5 +1,6 @@
 function loadHTML(name) {
     switch (name) {
+    // news/
         case 'news/news':            
             return `
         <div class="cover">
@@ -65,6 +66,61 @@ function loadHTML(name) {
                 <!-- <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
             </div>
         </form>
+            `
+            break;
+
+    //poster/
+        case 'poster/poster':
+            return `
+            <div class="preview">
+                <div class="img-bg">
+                    <img src="poster/poster.jpeg" alt="" srcset="">
+                </div> 
+               <img src="blur/blur-poster.png" alt="" class="box-blur">
+                <div class="img-content">
+                    <img class="replace"  src="poster/poster.jpeg" alt="" srcset="">
+                </div>
+                <div class="news-logo">
+                    <img src="poster/news-logo.png" alt="" srcset="">
+                </div>
+                <div class="logo-lensa">
+                    <img src="poster/logo-lensa.png" alt="" srcset="">
+                </div>
+                <p class="lensa">
+                    lensa animeme
+                </p>
+                <div class="line-1"></div>
+                <p class="follow">
+                    follow for more anime content
+                </p> 
+                <p class="admin">by <span class="author">hoshi</span></p>
+                <img src="poster/icon.png" class="icon" alt="" srcset="">
+                <div class="box-putih"></div>
+                <div class="line-2"></div>
+                <p class="title-news">POSTER TERBARU ANIME YAKUSOKU NO NEVERLAND</p>
+                <p class="desc-news">Meski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap berlanjut dari kabaran sudah berjalan 36 menit, ditargetkan selesai 3 tahun mendatang</p>
+                <img src="poster/Union.png" alt="" class="bulat">
+            </div>
+    <br>
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title-news">Judul News</label>
+                    <input type="text" class="form-control" id="title-news">
+                </div>
+                <div class="form-group">
+                    <label for="desc-news">News nya</label>
+                    <textarea class="form-control" id="desc-news"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="img-content">Pilih gambar Poster</label>
+                    <input type="file" accept="image/*" class="form-control-file" id="img-content" onchange="preview_image(event, 'img.replace')">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
             `
             break;
 
