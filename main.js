@@ -43,12 +43,10 @@ function changeTemplate(name) {
 }
 function preview_image(event){
     let reader = new FileReader(),
-        outputE = document.querySelectorAll('#preview img.replace')
+        outputE = document.querySelector('#preview img.replace')
 
     reader.onload = function(){
-        outputE.forEach(e => {
-            e.src = reader.result
-        })
+        outputE.src = reader.result
     }
     reader.readAsDataURL(event.target.files[0])
 }

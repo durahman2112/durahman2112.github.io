@@ -124,74 +124,6 @@ function loadHTML(name) {
             `
             break;
 
-    // fakta/
-        case 'fakta/fakta':
-            return `
-            <div class="cover">
-                <div class="gambar">
-                    <img class="replace" src="fakta/tgk.jpg" alt="" srcset="">
-                </div>
-                <img src="blur/blur.png" alt="" class="footer">
-                <div class="white-box"></div>
-                <p class="title">
-                    kimetsu no yaiba
-                </p>
-                <p class="desc">
-                    Meski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap berlanjut dari kabaran sudah berjalan 36 menit, ditargetkan selesai 3 tahun mendatang
-                </p>
-                <div class="bg-judul-content"></div>
-                <p class="judul-content">
-                    fakta
-                </p>
-                <p class="lensa">
-                    lensa.animeme
-                </p>
-                <p class="follow">
-                    follow for more anime content!
-                </p>
-                <p class="admin">
-                    by <span class="author">hoshi</span>
-                </p>
-                <div class="icon">
-                    <img src="fakta/icon.png" alt="" srcset="">
-                </div>
-                <div class="linebreak">
-        
-                </div>
-                <div class="bulet">
-                    <img src="fakta/bulet.png" alt="">
-                </div>
-                <div class="logo">
-                    <img src="logo.png" alt="" srcset="">
-                </div>
-        
-            </div>
-            <br>
-    
-            <form action="" id="form">
-                <div class="form-group">
-                    <label for="title">Judul Anime</label>
-                    <input type="text" class="form-control" id="title">
-                </div>
-                <div class="form-group">
-                    <label for="desc">Faktanya</label>
-                    <textarea class="form-control" id="desc"></textarea>
-                    <small class="form-text text-muted">Silahkan sebutkan faktanya, pastikan kebenarannya ya :V</small>
-                </div>
-                
-                <div class="form-group">
-                    <label for="gambar">Pilih gambar</label>
-                    <input type="file" class="form-control-file" id="gambar" >
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Admin</label>
-                    <input type="test" class="form-control" id="author">
-                    <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
-                </div>
-            </form>
-            `
-            break;
-
     // meme/
         case 'meme/meme':
             return `
@@ -1059,17 +991,17 @@ function loadHTML(name) {
             return `
             <div class="cover">
                 <div class="gambar">
-                    <img src="gambar.png" alt="" srcset="">
+                    <img src="reviewfull/gambar.png" alt="" srcset="">
                 </div>
-                <img src="../blur/blur-full.png" alt="" class="footer">
-                <img src="gambar2.jpg" alt="" class="img-1">
-                <img src="gambar2.jpg" alt="" class="img-2">
-                <img src="gambar2.jpg" alt="" class="img-3">
-                <img src="gambar2.jpg" alt="" class="img-4">
-                <img src="gambar2.jpg" alt="" class="img-5">
-                <img src="gambar2.jpg" alt="" class="img-6">
-                <img src="gambar2.jpg" alt="" class="img-7">
-                <img src="gambar2.jpg" alt="" class="img-8">
+                <img src="blur/blur-full.png" alt="" class="footer">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-1">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-2">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-3">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-4">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-5">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-6">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-7">
+                <img src="reviewfull/gambar2.jpg" alt="" class="img-8">
                 <p class="lensa">
                     lensa.animeme
                 </p>
@@ -1080,13 +1012,13 @@ function loadHTML(name) {
                     by <span class="author">hoshi</span>
                 </p>
                 <div class="icon">
-                    <img src="icon.png" alt="" srcset="">
+                    <img src="reviewfull/icon.png" alt="" srcset="">
                 </div>
                 <div class="linebreak">
         
                 </div>
                 <div class="logo">
-                    <img src="logo.png" alt="" srcset="">
+                    <img src="reviewfull/logo.png" alt="" srcset="">
                 </div>
         
             </div>
@@ -1350,6 +1282,74 @@ function loadHTML(name) {
                 <div class="form-group">
                     <label for="author">Admin</label>
                     <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+        
+    // fakta/
+        case 'fakta/fakta':
+            return `
+            <div class="cover">
+                <div class="gambar">
+                    <img class="replace" src="fakta/tgk.jpg" alt="" srcset="">
+                </div>
+                <img src="blur/blur.png" alt="" class="footer">
+                <div class="white-box"></div>
+                <p class="title">
+                    kimetsu no yaiba
+                </p>
+                <p class="desc">
+                    Meski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap berlanjut dari kabaran sudah berjalan 36 menit, ditargetkan selesai 3 tahun mendatang
+                </p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    fakta
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="fakta/icon.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="bulet">
+                    <img src="fakta/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+            <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title">Judul Anime</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="desc">Faktanya</label>
+                    <textarea class="form-control" id="desc"></textarea>
+                    <small class="form-text text-muted">Silahkan sebutkan faktanya, pastikan kebenarannya ya :V</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar</label>
+                    <input type="file" class="form-control-file" id="gambar" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                    <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
                 </div>
             </form>
             `
