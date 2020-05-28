@@ -5,7 +5,7 @@ function loadHTML(name) {
             return `
         <div class="cover">
             <div class="gambar">
-                <img src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
+                <img class="replace" src="news/kny.jpg" alt="" srcset="" style="background-position: center;background-size: cover;">
             </div>
             <img class="footer" src="blur/blur.png">
 <!--             <div class="footer">
@@ -58,7 +58,7 @@ function loadHTML(name) {
             
             <div class="form-group">
                 <label for="gambar">Pilih gambar</label>
-                <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, '.gambar > img')">
+                <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
             </div>
             <div class="form-group">
                 <label for="author">Admin</label>
@@ -114,7 +114,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="img-content">Pilih gambar Poster</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="img-content" onchange="preview_image(event, 'img.replace')">
+                    <input type="file" accept="image/*" class="form-control-file" id="img-content" onchange="preview_image(event)">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -181,7 +181,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, 'img.replace')">
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Admin</label>
@@ -197,10 +197,10 @@ function loadHTML(name) {
             return `
             <div class="cover">
                 <div class="gambar">
-                    <img src="meme/gambar.png" alt="" srcset="">
+                    <img class="replace" src="meme/gambar.png" alt="" srcset="">
                 </div>
                 <img src="blur/blur.png" alt="" class="footer">
-                <img src="meme/kny.jpg" alt="" class="img-content replace">
+                <!-- <img src="meme/kny.jpg" alt="" class="img-content replace"> -->
                 <p class="lensa">
                     lensa.animeme
                 </p>
@@ -227,7 +227,7 @@ function loadHTML(name) {
             <form action="" id="form">
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, 'img.replace')">
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -247,7 +247,7 @@ function loadHTML(name) {
                 <div class="footer">
         
                 </div>
-                <img src="char/char.png" alt="" class="img-char">
+                <img src="char/char.png" alt="" class="img-char replace">
                 <div class="white-box"></div>
                 <p class="nama">
                     sato Mafuyu
@@ -339,7 +339,7 @@ function loadHTML(name) {
                 </div>
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, 'img.img-char')">
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -354,13 +354,13 @@ function loadHTML(name) {
             return `
             <div class="cover">
                 <div class="gambar">
-                    <img class="img-char" src="char/char-desc.jpeg" alt="" srcset="">
+                    <img src="char/char-desc.jpeg" alt="" srcset="">
                 </div>
                 <div class="footer">
         
                 </div>
                 <div class="gambar-content">
-                    <img class="img-char" src="char/char-desc.jpeg" alt="" srcset="">
+                    <img class="img-char replace" src="char/char-desc.jpeg" alt="" srcset="">
                 </div>
                 <div class="white-box"></div>
                 <p class="nama">
@@ -410,7 +410,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, 'img.img-char')">
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event)">
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
@@ -424,7 +424,7 @@ function loadHTML(name) {
         case 'char/quote':
             return `
             <div class="cover">
-                <img src="char/IMG_20200523_222055-removebg-preview.png" alt="" class="img-char">
+                <img src="char/IMG_20200523_222055-removebg-preview.png" alt="" class="img-char replace">
                 <div class="white-box"></div>
                 <p class="kutip">"</p>
                 <p class="nama">
@@ -482,7 +482,7 @@ function loadHTML(name) {
                 
                 <div class="form-group">
                     <label for="img-char">Pilih gambar</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="img-char" onchange="preview_image(event, 'img.img-char')">
+                    <input type="file" accept="image/*" class="form-control-file" id="img-char" onchange="preview_image(event)">
                     <small class="form-text text-muted">Diharuskan gambar PNG yang transparan ya gaes!</small>
                 </div>
                 <div class="form-group">

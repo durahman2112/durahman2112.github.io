@@ -27,9 +27,9 @@ function changeTemplate(name) {
 
     console.log(linkTemplate, nowTemplate);
 }
-function preview_image(event, output){
+function preview_image(event){
     let reader = new FileReader(),
-        outputE = document.querySelectorAll('#preview ' + output)
+        outputE = document.querySelectorAll('#preview img.replace')
 
     reader.onload = function(){
         outputE.forEach(e => {
