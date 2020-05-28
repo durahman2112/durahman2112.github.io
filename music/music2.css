@@ -16,7 +16,6 @@ body{
 }
 .title{
     position: absolute;
-    width: 753px;
     height: 52px;
     left: 62px;
     top: 866px;
@@ -34,7 +33,6 @@ body{
 }
 .singer{
     position: absolute;
-    width: 185px;
     height: 40px;
     left: 62px;
     top: 827px;
@@ -53,7 +51,6 @@ body{
 
 .anime{
     position: absolute;
-    width: 643px;
     height: 50px;
     left: 62px;
     top: 926px;
