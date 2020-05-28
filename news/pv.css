@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2 !important;
+    font-family: 'Open Sans';
+
+}
+.cover{
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+
+    background: rgba(255, 255, 255, 0);
+}
+/* title-news */
+
+.title{
+    position: absolute;
+    width: 931px;
+    height: 123px;
+    left: 62px;
+    top: 686px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 113.18%;
+    /* or 54px */
+    
+    text-transform: uppercase;
+    
+    color: #FF6600;
+}
+
+
+
+/* desc-news */
+
+.desc{
+    position: absolute;
+    width: 878px;
+    height: 148px;
+    left: 62px;
+    top: 809px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    
+    /* black */
+    
+    color: #212121;
+}
+
+
+/* admin */
+
+.admin{
+    position: absolute;
+    height: 0px;
+    left: 777px;
+    top: 1045px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    /* identical to box height, or 0% */
+    
+    text-align: right;
+    letter-spacing: 0.13em;
+    
+    color: #FFFFFF;
+}
