@@ -1,7 +1,7 @@
 let nowTemplate,
     previewContent
 
-changeTemplate('news/news')
+changeTemplate('char/char-desc')
 
 function add_link_css(name) {
     let linkTemplate = document.getElementById('linkTemplate'),
@@ -21,35 +21,23 @@ function changeTemplate(name) {
         return;
     }
     nowTemplate = name
+    add_link_css(name)
+    preview.innerHTML = loadHTML(name)
+    preview.children[0].classList.add('scale')
+
     console.log(linkTemplate, nowTemplate);
-    
-    switch (name) {
-        case 'news/news':
-            add_link_css(name)
-            preview.innerHTML = loadHTML(name)
-            break;
-
-        case 'char/cover':
-            add_link_css(name)
-            preview.innerHTML = loadHTML(name)
-            break;
-
-        case 'char/quote':
-            add_link_css(name)
-            preview.innerHTML = loadHTML(name)
-            break;
-    
-        default:
-            break;
-    }
 }
 function preview_image(event, output){
     let reader = new FileReader(),
-        outputE = document.querySelector(output)
-    reader.onload = function(){
-        outputE.src = reader.result
-    }
-    reader.readAsDataURL(event.target.files[0])
+        outputE = document.querySelectorAll('#preview ' + output)
+
+        reader.onload = function(){
+            outputE.forEach(e => {
+                    e.src = reader.result
+            })
+        }
+        reader.readAsDataURL(event.target.files[0])
+        
 }
 function preview(){
     console.log('preview');
