@@ -494,6 +494,140 @@ function loadHTML(name) {
             `
             break;
     
+    // list
+        case 'list/cover-list':
+            return `
+            <div class="cover">
+                <div class="gambar">
+                    <img class="replace" src="list/img.jpeg" alt="" srcset="">
+                </div>
+                <img src="blur/blur.png" alt="" class="footer">
+                <div class="white-box"></div>
+                <p class="rekomendasi">Rekomendasi</p>
+                <p class="title">
+                    kimetsu no yaiba
+                </p>
+                <p class="desc">
+                    Kisah para anak manusia yang dijadikan makanan 
+                </p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    rekomendasi
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="list/icon-white.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="bulet">
+                    <img src="list/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="list/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+            <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="rekomendasi">Isi ini Rekomendasi / Daftar</label>
+                    <input type="text" class="form-control" id="rekomendasi">
+                </div>
+                <div class="form-group">
+                    <label for="title">Judul List</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="desc">Deskripsi singkat!!</label>
+                    <input type="text" class="form-control" id="desc">
+                </div>
+                
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar</label>
+                    <input type="file" class="form-control-file" id="gambar">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                    <!-- <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
+                </div>
+            </form>
+            `
+            break;
+        case 'list/list':
+            return `
+            <div class="cover">
+                <div class="gambar">
+                    <img src="list/img.jpeg" alt="" srcset="">
+                </div>
+               <img src="blur/blur.png" alt="" class="footer">
+                <div class="white-box"></div>
+                <img src="list/img.jpeg" alt="" class="img-content replace">
+                <p class="rekomendasi">Rekomendasi</p>
+                <p class="title">
+                    kimetsu no yaiba
+                </p>
+                <p class="genre">
+                    Comedy, Slice of life, adventure, horror 
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="list/icon-white.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="bulet">
+                    <img src="list/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="logo.png" alt="" srcset="">
+                </div>
+        
+            </div><br>
+    
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title">Judul Anime</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <input type="text" class="form-control" id="genre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar</label>
+                    <input type="file" class="form-control-file" id="gambar">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+
         default:
             break;
     }
