@@ -66,7 +66,6 @@ body{
 
 .nama{
     position: absolute;
-    width: 900px;
     height: 79px;
     left: 90px;
     top: 788px;
@@ -85,7 +84,6 @@ body{
 }
 .judul-anime{
     position: absolute;
-    width: 900px;
     height: 43px;
     left: 90px;
     top: 867px;
@@ -104,7 +102,6 @@ body{
 }
 .kanji{
     position: absolute;
-    width: 900px;
     height: 43px;
     left: 90px;
     top: 754px;
@@ -133,7 +130,7 @@ top: 927px;
 
 /* orange */
 
-border: 2px solid #FF6600;
+border: 1px solid #FF6600;
 }
 .bg-judul-content{
     position: absolute;
@@ -276,7 +273,6 @@ border: 2px solid #FF6600;
 }
 .tgl{
     position: absolute;
-    width: 169px;
     height: 34px;
     left: 304px;
     top: 944px;
@@ -295,7 +291,6 @@ border: 2px solid #FF6600;
 }
 .jk{
     position: absolute;
-    width: 119px;
     height: 34px;
     left: 175px;
     top: 944px;
@@ -314,7 +309,6 @@ border: 2px solid #FF6600;
 }
 .age{
     position: absolute;
-    width: 118px;
     height: 34px;
     left: 483px;
     top: 944px;
@@ -333,7 +327,6 @@ border: 2px solid #FF6600;
 }
 .tall{
     position: absolute;
-    width: 115px;
     height: 34px;
     left: 611px;
     top: 944px;
@@ -352,7 +345,6 @@ border: 2px solid #FF6600;
 }
 .seiyuu{
     position: absolute;
-    width: 169px;
     height: 34px;
     left: 749px;
     top: 944px;
