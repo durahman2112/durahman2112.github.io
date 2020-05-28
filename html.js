@@ -72,7 +72,7 @@ function loadHTML(name) {
     //poster/
         case 'poster/poster':
             return `
-            <div class="preview">
+            <div class="cover">
                 <div class="img-bg">
                     <img src="poster/poster.jpeg" alt="" srcset="">
                 </div> 
@@ -187,6 +187,51 @@ function loadHTML(name) {
                     <label for="exampleInputPassword1">Admin</label>
                     <input type="test" class="form-control" id="author">
                     <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
+                </div>
+            </form>
+            `
+            break;
+
+    // meme/
+        case 'meme/meme':
+            return `
+            <div class="cover">
+                <div class="gambar">
+                    <img src="meme/gambar.png" alt="" srcset="">
+                </div>
+                <img src="blur/blur.png" alt="" class="footer">
+                <img src="meme/kny.jpg" alt="" class="img-content replace">
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                   by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="meme/icon.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="logo">
+                    <img src="meme/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+    
+            <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar</label>
+                    <input type="file" accept="image/*" class="form-control-file" id="gambar" onchange="preview_image(event, 'img.replace')">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
                 </div>
             </form>
             `
