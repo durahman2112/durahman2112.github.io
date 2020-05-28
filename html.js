@@ -404,7 +404,7 @@ function loadHTML(name) {
                     <input type="text" class="form-control" id="judul-anime">
                 </div>
                 <div class="form-group">
-                    <label for="quote">Deskripsi Karakter</label>
+                    <label for="quote">Quote</label>
                     <textarea class="form-control" id="quote"></textarea>
                 </div>
                 
@@ -433,10 +433,10 @@ function loadHTML(name) {
                 <div class="white-box"></div>
                 <p class="rekomendasi">Rekomendasi</p>
                 <p class="title">
-                    kimetsu no yaiba
+                    Anime Spring 2020 Terbaik!
                 </p>
                 <p class="desc">
-                    Kisah para anak manusia yang dijadikan makanan 
+                    Jajaran anime yang gakan nyesel nonton!
                 </p>
                 <div class="bg-judul-content"></div>
                 <p class="judul-content">
@@ -504,7 +504,7 @@ function loadHTML(name) {
                 <img src="list/img.jpeg" alt="" class="img-content replace">
                 <p class="rekomendasi">Rekomendasi</p>
                 <p class="title">
-                    kimetsu no yaiba
+                    Re:Zero Kara Hajimeru Isekai
                 </p>
                 <p class="genre">
                     Comedy, Slice of life, adventure, horror 
@@ -623,7 +623,7 @@ function loadHTML(name) {
     // scene/
         case 'scene/scene':
             return `
-            <div class="cover">
+            <div class="cover scale-wide">
                 <img src="scene/scene.jpg" alt="" class="gambar replace">
                 <div class="white-box"></div>
                 <p class="scene">scene</p>
