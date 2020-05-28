@@ -79,7 +79,7 @@ body{
 .line-1{
     position: absolute;
     width: 74px;
-    left: 999px;
+    left: 1004px;
     top: 813px;
 
     border: 1px solid #FFFFFF;
@@ -106,7 +106,7 @@ body{
 }
 .admin{
     position: absolute;
-    left: 1009px;
+    left: 1001px;
     top: 242px;
     width: max-content;
 
