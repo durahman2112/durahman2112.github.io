@@ -600,7 +600,7 @@ function loadHTML(name) {
                     <img src="list/bulet.png" alt="">
                 </div>
                 <div class="logo">
-                    <img src="logo.png" alt="" srcset="">
+                    <img src="list/logo.png" alt="" srcset="">
                 </div>
         
             </div><br>
@@ -619,6 +619,136 @@ function loadHTML(name) {
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
                     <input type="file" class="form-control-file" id="gambar">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+
+    // music/
+        case 'music/music':
+            return `
+            <div class="cover">
+                <div class="white-circle"></div>
+                <img class="img-music replace" src="music/Cover.jpg" alt="" srcset="">
+                <p class="singer">Aimer</p>
+                <p class="title">
+                    Torches
+                </p>
+                <p class="anime">
+                    Vinland Saga
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                   by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="music/icon-black.png" alt="" srcset="">
+                </div>
+                <div class="line">
+        
+                </div>
+                <div class="bulet">
+                    <img src="music/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="music/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+        </div><br>
+        <div class="container">
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="singer">Penyanyi</label>
+                    <input type="text" class="form-control" id="singer">
+                </div>
+                <div class="form-group">
+                    <label for="anime">Anime</label>
+                    <input type="text" class="form-control" id="anime">
+                    <small class="form-text text-muted">Judul anime atau lagu original/ Single</small>
+                </div>
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar music</label>
+                    <input type="file" class="form-control-file" id="gambar">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+
+    // scene/
+        case 'scene/scene':
+            return `
+            <div class="cover">
+                <img src="scene/scene.jpg" alt="" class="gambar replace">
+                <div class="white-box"></div>
+                <p class="scene">scene</p>
+                <p class="title">
+                    Kimetsu no yaiba
+                </p>
+                <p class="genre">
+                    Action, Demons, Historical, Shounen, Supernatural
+                </p>
+                <p class="eps">Episode</p>
+                <p class="episode">020</p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="scene/icon-black.png" alt="" srcset="">
+                </div>
+                <div class="line">
+        
+                </div>
+                <div class="bulet">
+                    <img src="scene/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="scene/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+        </div><br>
+        <div class="container">
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="genre">genre</label>
+                    <input type="text" class="form-control" id="genre">
+                </div>
+                <div class="form-group">
+                    <label for="episode">Episode</label>
+                    <input type="text" class="form-control" id="episode">
+                </div>
+                <div class="form-group">
+                    <label for="gambar">Pilih gambar Scene</label>
+                    <input type="file" class="form-control-file" id="gambar">
+                    <small class="form-text text-muted">Gambar ini untuk preview cover, Screenshot dulu di scene</small>
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>
