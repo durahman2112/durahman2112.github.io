@@ -1141,8 +1141,8 @@ function loadHTML(name) {
         case 'reviewpereps/cover':
             return `
             <div class="cover">
-                <div class="gambar">
-                    <img class="replace" src="reviewpereps/gambar.png" alt="" srcset="">
+                <div class="">
+                    <img class="replace gambar" src="reviewpereps/gambar.png" alt="" srcset="">
                 </div>
                 <img src="blur/blur.png" alt="" class="footer">
                 <div class="white-box"></div>
@@ -1186,6 +1186,166 @@ function loadHTML(name) {
                 <div class="form-group">
                     <label for="gambar">Pilih gambar</label>
                     <input type="file" class="form-control-file" id="gambar">
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+        case 'reviewpereps/isicontent':
+            return `
+            <div class="cover">
+                <img src="blur/blur.png" alt="" class="footer">
+                <div class="white-box"></div>
+                <div class="gambar-content">
+                    <img class="replace" src="reviewpereps/gambar.png" alt="" srcset="">
+                </div>
+                <p class="desc">Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah </p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    Review singkat
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="reviewpereps/icon.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="bulet">
+                    <img src="reviewpereps/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="reviewpereps/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+    <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="gambar-content">Pilih gambar</label>
+                    <input type="file" class="form-control-file" id="gambar-content">
+                </div>
+                <div class="form-group">
+                    <label for="desc">Penjelasan</label>
+                    <textarea class="form-control" id="desc"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+        case 'reviewpereps/manga':
+            return `
+            <div class="cover">
+                <img src="blur/blur.png" alt="" class="footer">
+                <div class="white-box"></div>
+                <div class="gambar-content">
+                    <img class="replace" src="reviewpereps/gambar.png" alt="" srcset="">
+                </div>
+                <p class="desc">Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah kembali. Sekarang para anggota 22/7 akan melakukan penjurian seusai keputusan Miu telah </p>
+                <div class="bg-judul-content"></div>
+                <p class="judul-content">
+                    Review singkat
+                </p>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="reviewpereps/icon.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="bulet">
+                    <img src="reviewpereps/bulet.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="reviewpereps/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+        <br>
+    
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="gambar-content">Pilih gambar Manga</label>
+                    <input type="file" class="form-control-file" id="gambar-content">
+                </div>
+                <div class="form-group">
+                    <label for="desc">Penjelasan</label>
+                    <textarea class="form-control" id="desc"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+        case 'reviewpereps/image-page':
+            return `
+            <div class="cover">
+                <img src="blur/blur.png" alt="" class="footer">
+                <div class="gambar-content">
+                    <img class="replace" src="reviewpereps/gambar.png" alt="" srcset="">
+                </div>
+                <div class="gambar-content2">
+                    <img class="replace-2" src="reviewpereps/gambar2.jpg" alt="" srcset="">
+                </div>
+                <p class="lensa">
+                    lensa.animeme
+                </p>
+                <p class="follow">
+                    follow for more anime content!
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+                <div class="icon">
+                    <img src="reviewpereps/icon.png" alt="" srcset="">
+                </div>
+                <div class="linebreak">
+        
+                </div>
+                <div class="logo">
+                    <img src="reviewpereps/logo.png" alt="" srcset="">
+                </div>
+        
+            </div>
+    <br>
+    
+            <form action="" id="form">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="replace">Pilih gambar 1</label>
+                        <input type="file" class="form-control-file" id="replace">
+                    </div>
+                    <div class="form-group col">
+                        <label for="replace-2">Pilih gambar 2</label>
+                        <input type="file" class="form-control-file" id="replace-2">
+                    </div>
+    
                 </div>
                 <div class="form-group">
                     <label for="author">Admin</label>

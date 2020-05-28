@@ -26,11 +26,18 @@ function changeTemplate(name) {
     preview.innerHTML = loadHTML(name)
     preview.children[0].classList.add('scale')
 
-    input_file = document.querySelector("#preview input[type='file']")
-    if(input_file !== null){
-        input_file.accept = 'image/*'
-        input_file.onchange = function (){preview_image(event)}
-    }
+    input_file = document.querySelectorAll("#preview input[type='file']")
+    
+    input_file.forEach(e => {
+        if(e !== null){
+            e.accept = 'image/*'
+                if(input_file.length == 1){
+                    e.onchange = function (){preview_image(event)}
+                }else{
+                    e.onchange = function(){preview_images(event, e.id)}
+                }
+            }
+        })
 
     console.log(linkTemplate, nowTemplate);
 }
@@ -40,8 +47,19 @@ function preview_image(event){
 
     reader.onload = function(){
         outputE.forEach(e => {
-                e.src = reader.result
+            e.src = reader.result
         })
+    }
+    reader.readAsDataURL(event.target.files[0])
+}
+function preview_images(event, output){
+    let reader = new FileReader(),
+        outputE = document.querySelector('#preview img.' + output)
+
+        console.log('#preview img.' + output, outputE);
+        
+    reader.onload = function(){
+        outputE.src = reader.result
     }
     reader.readAsDataURL(event.target.files[0])
 }
