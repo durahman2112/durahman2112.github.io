@@ -93,5 +93,10 @@ footer p,a,li{
         margin-top: -350px;
         margin-bottom: -350px;
     }
+    .scale-wide{
+        transform: translateX(-760px) scale(0.19,0.19);
+        margin-top: -400px;
+        margin-bottom: -400px;
+    }
     }
 }
