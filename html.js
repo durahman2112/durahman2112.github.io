@@ -95,7 +95,7 @@ function loadHTML(name) {
                 </p> 
                 <p class="admin">by <span class="author">hoshi</span></p>
                 <img src="poster/icon.png" class="icon" alt="" srcset="">
-                <div class="box-putih"></div>
+                <img src="blur/blur-white.png" class="box-putih" alt="" srcset="">
                 <div class="line-2"></div>
                 <p class="title-news">POSTER TERBARU ANIME YAKUSOKU NO NEVERLAND</p>
                 <p class="desc-news">Meski dalam wabah COVID-19, produksi film terbaru Hayao Mizaki, ‘Kimitachi wa dou Ikiru Ka’ tetap berlanjut dari kabaran sudah berjalan 36 menit, ditargetkan selesai 3 tahun mendatang</p>
@@ -176,9 +176,7 @@ function loadHTML(name) {
                 <div class="gambar">
                     <img src="char/poster.jpeg" alt="" srcset="">
                 </div>
-                <div class="footer">
-        
-                </div>
+                <img src="blur/blur-full.jpeg" class="footer" alt="" srcset="">
                 <img src="char/char.png" alt="" class="img-char replace">
                 <div class="white-box"></div>
                 <p class="nama">
@@ -288,9 +286,7 @@ function loadHTML(name) {
                 <div class="gambar">
                     <img src="char/char-desc.jpeg" alt="" srcset="">
                 </div>
-                <div class="footer">
-        
-                </div>
+                <img src="blur/blur-char.png" class="footer" alt="" srcset="">
                 <div class="gambar-content">
                     <img class="img-char replace" src="char/char-desc.jpeg" alt="" srcset="">
                 </div>
