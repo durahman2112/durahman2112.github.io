@@ -758,6 +758,47 @@ function loadHTML(name) {
             `
             break;
 
+    // music/
+        case 'music/music2':
+            return `
+            <div class="cover">
+                <img class="img-music replace" src="music/bg.png" alt="" srcset="">
+                <p class="singer">Aimer</p>
+                <p class="title">
+                    Torches
+                </p>
+                <p class="anime">
+                    Vinland Saga
+                </p>
+                <p class="admin">
+                    by <span class="author">hoshi</span>
+                </p>
+        
+            </div>
+        </div><br>
+        <div class="container">
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="singer">Penyanyi</label>
+                    <input type="text" class="form-control" id="singer">
+                </div>
+                <div class="form-group">
+                    <label for="anime">Anime</label>
+                    <input type="text" class="form-control" id="anime">
+                    <small class="form-text text-muted">Judul anime atau lagu original/ Single</small>
+                </div>
+                <div class="form-group">
+                    <label for="author">Admin</label>
+                    <input type="test" class="form-control" id="author">
+                </div>
+            </form>
+            `
+            break;
+
         default:
             break;
     }

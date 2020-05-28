@@ -26,9 +26,11 @@ function changeTemplate(name) {
     preview.innerHTML = loadHTML(name)
     preview.children[0].classList.add('scale')
 
-    input_file= document.querySelector("#preview input[type='file']")
-    input_file.accept = 'image/*'
-    input_file.onchange = function (){preview_image(event)}
+    input_file = document.querySelector("#preview input[type='file']")
+    if(input_file !== null){
+        input_file.accept = 'image/*'
+        input_file.onchange = function (){preview_image(event)}
+    }
 
     console.log(linkTemplate, nowTemplate);
 }
