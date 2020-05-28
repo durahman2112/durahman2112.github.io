@@ -942,7 +942,7 @@ function loadHTML(name) {
     
             <form action="" id="form">
                 <div class="form-group">
-                    <label for="title">Judul News</label>
+                    <label for="title">Judul </label>
                     <input type="text" class="form-control" id="title">
                 </div>
                 <div class="form-row">
