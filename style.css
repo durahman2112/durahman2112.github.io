@@ -121,7 +121,7 @@ footer p,a,li{
 }
 .fixed-bottom {
     position: sticky;
-    top:auto;
+    top:0;
     
 }
 
