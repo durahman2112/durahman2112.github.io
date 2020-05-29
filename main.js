@@ -25,7 +25,6 @@ function changeTemplate(name) {
     add_link_css(name)
     // preview.innerHTML = loadHTML(name)
     includeHTML(name)
-    preview.children[0].classList.add('scale')
 
     input_file = document.querySelectorAll("#preview input[type='file']")
     
@@ -117,7 +116,10 @@ function includeHTML(file) {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
-        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+        if (this.status == 200) {
+            elmnt.innerHTML = this.responseText;
+            document.querySelector('#preview > div').classList.add('scale')
+        }
         if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
         /* Remove the attribute, and call this function once more: */
         // elmnt.removeAttribute("w3-include-html");
