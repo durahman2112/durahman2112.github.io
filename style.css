@@ -120,8 +120,11 @@ footer p,a,li{
     margin: 0;
 }
 .fixed-bottom {
-    position: sticky !important;
+    position: relative !important;
     top:auto;
+    bottom:auto;
+    right: auto;
+    left: auto;
     
 }
 
