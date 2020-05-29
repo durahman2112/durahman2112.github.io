@@ -120,8 +120,8 @@ footer p,a,li{
     margin: 0;
 }
 .fixed-bottom {
-    position: sticky;
-    top:0;
+    position: sticky !important;
+    top:auto;
     
 }
 
@@ -138,7 +138,7 @@ footer p,a,li{
         margin-bottom: 70px !important;
     }
     .fixed-bottom{
-        position: fixed;
+        position: fixed !important;
         bottom:0;
         right: 0;
         left: 0;
