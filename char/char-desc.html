@@ -15,11 +15,11 @@
     <div class="container">
         <div class="cover">
             <div class="gambar">
-                <img src="char-desc.jpeg" alt="" srcset="">
+                <img src="char/char-desc.jpeg" alt="" srcset="">
             </div>
-            <img class="footer" src="../blur/blur-char.png">
+            <img src="blur/blur-char.png" class="footer" alt="" srcset="">
             <div class="gambar-content">
-                <img src="char-desc.jpeg" alt="" srcset="">
+                <img class="img-char replace" src="char/char-desc.jpeg" alt="" srcset="">
             </div>
             <div class="white-box"></div>
             <p class="nama">
@@ -39,54 +39,44 @@
                 follow for more anime content!
             </p>
             <p class="admin">
-                by hoshi
+                by <span class="author">hoshi</span>
             </p>
             <div class="icon">
-                <img src="icon-white.png" alt="" srcset="">
+                <img src="char/icon-white.png" alt="" srcset="">
             </div>
             <div class="linebreak">
     
             </div>
             <div class="bulet">
-                <img src="bulet.png" alt="">
+                <img src="char/bulet.png" alt="">
             </div>
             <div class="logo">
-                <img src="logo.png" alt="" srcset="">
+                <img src="char/logo.png" alt="" srcset="">
             </div>
     
         </div>
 
-<br>
-    <form action="" id="form">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Nama Karakter</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Deskripsi Karakter</label>
-            <textarea class="form-control" id="exampleInputPassword1"></textarea>
-        </div>
-        
-        <div class="form-group">
-            <label for="exampleInputEmail1">Pilih gambar</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Admin</label>
-            <input type="test" class="form-control" id="exampleInputPassword1">
-            <small id="emailHelp" class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
-        </div>
-        <button type="submit" class="btn btn-primary">
-            <i class="fas fa-eye fa-sm"></i>
-            &nbsp;Preview
-        </button>
-        <button type="submit" class="btn btn-outline-success">
-            <i class="fas fa-download"></i>
-            &nbsp;Download
-        </button>
-    </form>
-
-
+    <br>
+        <form action="" id="form">
+            <div class="form-group">
+                <label for="nama">Nama Karakter</label>
+                <input type="text" class="form-control" id="nama">
+            </div>
+            <div class="form-group">
+                <label for="desc-char">Deskripsi Karakter</label>
+                <textarea class="form-control" id="desc-char"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="gambar">Pilih gambar</label>
+                <input type="file" class="form-control-file" id="gambar">
+            </div>
+            <div class="form-group">
+                <label for="author">Admin</label>
+                <input type="test" class="form-control" id="author">
+                <!-- <small id="emailHelp" class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small> -->
+            </div>
+        </form>
     </div>
     
 

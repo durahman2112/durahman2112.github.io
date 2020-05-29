@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="cover">
-            <img src="IMG_20200523_222055-removebg-preview.png" alt="" class="img-char">
+            <img src="char/IMG_20200523_222055-removebg-preview.png" alt="" class="img-char replace">
             <div class="white-box"></div>
             <p class="kutip">"</p>
             <p class="nama">
@@ -32,20 +32,20 @@
                 lensa.animeme
             </p>
             <p class="admin">
-                by dun
+                by <span class="author">dun</span>
             </p>
             <div class="icon">
-                <img src="icon-black.png" alt="" srcset="">
+                <img src="char/icon-black.png" alt="" srcset="">
             </div>
             <div class="linebreak">
     
             </div>
     
             <div class="bulet">
-                <img src="bulet.png" alt="">
+                <img src="char/bulet.png" alt="">
             </div>
             <div class="logo">
-                <img src="logo.png" alt="" srcset="">
+                <img src="char/logo.png" alt="" srcset="">
             </div>
     
             <div class="node-1"></div>
@@ -58,26 +58,26 @@
         <br>
         <form action="" id="form">
             <div class="form-group">
-                <label for="exampleInputEmail1">Nama Karakter</label>
-                <input type="text" class="form-control" id="exampleInputEmail1">
+                <label for="nama">Nama Karakter</label>
+                <input type="text" class="form-control" id="nama">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Anime</label>
-                <input type="text" class="form-control" id="exampleInputEmail1">
+                <label for="judul-anime">Anime</label>
+                <input type="text" class="form-control" id="judul-anime">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Deskripsi Karakter</label>
-                <textarea class="form-control" id="exampleInputPassword1"></textarea>
+                <label for="quote">Quote</label>
+                <textarea class="form-control" id="quote"></textarea>
             </div>
             
             <div class="form-group">
-                <label for="exampleInputEmail1">Pilih gambar</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile">
+                <label for="img-char">Pilih gambar</label>
+                <input type="file" class="form-control-file" id="img-char" >
                 <small class="form-text text-muted">Diharuskan gambar PNG yang transparan ya gaes!</small>
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Admin</label>
-                <input type="test" class="form-control" id="exampleInputPassword1">
+                <label for="author">Admin</label>
+                <input type="test" class="form-control" id="author">
                 <small class="form-text text-muted">Pakai 'BY' dulu lalu nama admin</small>
             </div>
         </form>
