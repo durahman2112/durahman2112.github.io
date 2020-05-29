@@ -53,16 +53,13 @@ function preview(){
         if(e.type != 'file'){
             previewE.innerHTML = e.value
         }
-    }    
+    }
+    previewContent = document.querySelector('#preview div.cover')
 
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
         
-    if (previewContent.clientWidth == 1920) {
-        previewContent.classList.remove('scale-wide')
-    }else{
-        previewContent.classList.remove('scale')
-    }
+    previewContent.classList.remove('scale')
     domtoimage.toPng(previewContent)
         .then(function (dataUrl) {
             // var img = new Image();
@@ -70,11 +67,7 @@ function preview(){
             // document.body.appendChild(img);
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
-            if (previewContent.width == '1920px') {
-                previewContent.classList.add('scale-wide')
-            }else{
-                previewContent.classList.add('scale')
-            }
+            previewContent.classList.add('scale')
         })
         .catch(function (error) {
             console.error('oops, something went wrong!', error);
@@ -91,13 +84,7 @@ function includeHTML(file) {
         if (this.status == 200) {
             elmnt.innerHTML = this.responseText;
 
-            previewContent = document.querySelector('#preview div.cover')
-            console.log(previewContent.clientWidth);
-            if(previewContent.clientWidth == 1920){
-                document.querySelector('#preview div.cover').classList.add('scale-wide')
-            }else{
-                document.querySelector('#preview div.cover').classList.add('scale')
-            }
+            document.querySelector('#preview div.cover').classList.add('scale')
             document.querySelector('#preview div.container').classList.remove('container')
 
             input = document.querySelectorAll("#preview input[type='file']")
