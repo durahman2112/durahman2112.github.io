@@ -10,7 +10,6 @@ function add_link_css(name) {
     link.id = name + '.css'
     link.rel = 'stylesheet'
     link.href = link.id
-    link.crossOrigin = 'anonymous'
     
     linkTemplate.innerHTML = ''
     linkTemplate.appendChild(link)
