@@ -119,6 +119,7 @@ function includeHTML(file) {
         if (this.status == 200) {
             elmnt.innerHTML = this.responseText;
             document.querySelector('#preview div.cover').classList.add('scale')
+            document.querySelector('#preview div.container').classList.remove('container')
         }
         if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
         /* Remove the attribute, and call this function once more: */
