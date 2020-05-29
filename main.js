@@ -58,7 +58,7 @@ function preview(){
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
         
-    if (previewContent.width == '1920px') {
+    if (previewContent.clientWidth == 1920) {
         previewContent.classList.remove('scale-wide')
     }else{
         previewContent.classList.remove('scale')
@@ -93,7 +93,7 @@ function includeHTML(file) {
 
             previewContent = document.querySelector('#preview div.cover')
             console.log(previewContent.width);
-            if(previewContent.width == '1920px'){
+            if(previewContent.clientWidth == 1920){
                 document.querySelector('#preview div.cover').classList.add('scale-wide')
             }else{
                 document.querySelector('#preview div.cover').classList.add('scale')
