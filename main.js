@@ -92,6 +92,7 @@ function includeHTML(file) {
             elmnt.innerHTML = this.responseText;
 
             previewContent = document.querySelector('#preview div.cover')
+            console.log(previewContent.width);
             if(previewContent.width == '1920px'){
                 document.querySelector('#preview div.cover').classList.add('scale-wide')
             }else{
