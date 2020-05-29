@@ -76,7 +76,7 @@ function preview(){
     }
     
     // return ;
-    previewContent = document.querySelector('#preview > div')
+    previewContent = document.querySelector('#preview div.cover')
 
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
