@@ -59,7 +59,11 @@ function preview(){
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
         
-    previewContent.classList.remove('scale')
+    if (previewContent.width == '1920px') {
+        previewContent.classList.remove('scale-wide')
+    }else{
+        previewContent.classList.remove('scale')
+    }
     domtoimage.toPng(previewContent)
         .then(function (dataUrl) {
             // var img = new Image();
@@ -67,7 +71,11 @@ function preview(){
             // document.body.appendChild(img);
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
-            previewContent.classList.add('scale')
+            if (previewContent.width == '1920px') {
+                previewContent.classList.add('scale-wide')
+            }else{
+                previewContent.classList.add('scale')
+            }
         })
         .catch(function (error) {
             console.error('oops, something went wrong!', error);
