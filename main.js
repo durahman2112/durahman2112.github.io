@@ -112,7 +112,7 @@ function preview(){
 function includeHTML(file) {
     let elmnt, xhttp
 
-    elmnt = document.querySelector('#html-replace')
+    elmnt = document.querySelector('#preview')
     /* Make an HTTP request using the attribute value as the file name: */
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
