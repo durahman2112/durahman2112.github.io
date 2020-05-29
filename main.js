@@ -92,7 +92,11 @@ function includeHTML(file) {
         if (this.status == 200) {
             elmnt.innerHTML = this.responseText;
 
-            document.querySelector('#preview div.cover').classList.add('scale')
+            if(previewContent == '1920px'){
+                document.querySelector('#preview div.cover').classList.add('scale-wide')
+            }else{
+                document.querySelector('#preview div.cover').classList.add('scale')
+            }
             document.querySelector('#preview div.container').classList.remove('container')
 
             input = document.querySelectorAll("#preview input[type='file']")
