@@ -15,30 +15,12 @@ function add_link_css(name) {
     linkTemplate.appendChild(link)
 }
 function changeTemplate(name) {
-    let preview = document.getElementById('preview'),
-        input_file
-    
     if(nowTemplate == name){
         return;
     }
     nowTemplate = name
     add_link_css(name)
-    // preview.innerHTML = loadHTML(name)
     includeHTML(name)
-
-    input_file = document.querySelectorAll("#preview input[type='file']")
-    
-    input_file.forEach(e => {
-        if(e !== null){
-            e.accept = 'image/*'
-                if(input_file.length == 1){
-                    e.onchange = function (){preview_image(event)}
-                }else{
-                    e.onchange = function(){preview_images(event, e.id)}
-                }
-            }
-        })
-
     console.log(linkTemplate, nowTemplate);
 }
 function preview_image(event){
@@ -74,8 +56,6 @@ function preview(){
             previewE.innerHTML = e.value
         }
     }
-    
-    // return ;
     previewContent = document.querySelector('#preview div.cover')
 
     let modal_preview = document.getElementById('modal_preview'),
@@ -95,19 +75,6 @@ function preview(){
             console.error('oops, something went wrong!', error);
         });
 }
-// function download(){
-//     preview()
-
-//     let date = new Date(),
-//         dateFormat = date.getDate() + '' + date.getMonth() + '' + date.getFullYear(),
-//         fileName = document.querySelector('p.judul-content').innerHTML.replace(/\s+/g, '').toUpperCase() + '_' + dateFormat
-        
-//     // return;
-//     domtoimage.toBlob(previewContent)
-//         .then(function (blob){
-//             window.saveAs(blob, fileName + '.png')
-//         })
-// }
 function includeHTML(file) {
     let elmnt, xhttp
 
@@ -120,6 +87,17 @@ function includeHTML(file) {
             elmnt.innerHTML = this.responseText;
             document.querySelector('#preview div.cover').classList.add('scale')
             document.querySelector('#preview div.container').classList.remove('container')
+            input_file = document.querySelectorAll("#preview input[type='file']")
+            input_file.forEach(e => {
+                if(e !== null){
+                    e.accept = 'image/*'
+                        if(input_file.length == 1){
+                            e.onchange = function (){preview_image(event)}
+                        }else{
+                            e.onchange = function(){preview_images(event, e.id)}
+                        }
+                    }
+            })
         }
         if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
         /* Remove the attribute, and call this function once more: */
