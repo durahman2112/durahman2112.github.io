@@ -58,7 +58,9 @@ function preview(){
 
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
-        modal_download = document.getElementById('download')
+        modal_download = document.getElementById('download'),
+        p_judulContent = document.querySelector('#preview p.judul-content').innerText,
+        today = new Date()
         
     previewContent.classList.remove('scale')
     domtoimage.toPng(previewContent)
@@ -69,7 +71,7 @@ function preview(){
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
             modal_download.href = dataUrl
-            modal_download.download = 'kustomNama'
+            modal_download.download = p_judulContent.replace(/\s+/g, '') + today.getDate() + today.getMonth() + today.getFullYear() + '.png'
             previewContent.classList.add('scale')
         })
         .catch(function (error) {
