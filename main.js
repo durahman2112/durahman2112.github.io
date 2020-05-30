@@ -71,7 +71,7 @@ function preview(){
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
             modal_download.href = dataUrl
-            modal_download.download = p_judulContent.replace(/\s+/g, '') + today.getDate() + today.getMonth() + today.getFullYear() + '.png'
+            modal_download.download = p_judulContent.replace(/\s+/g, '') + today.getDate() + (today.getMonth() + 1) + today.getFullYear() + '.png'
             previewContent.classList.add('scale')
         })
         .catch(function (error) {
