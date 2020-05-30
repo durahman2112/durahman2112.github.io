@@ -58,7 +58,7 @@ function preview(){
 
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
-        modal_download = modal_preview_body.getElementById('download')
+        modal_download = modal_preview.getElementById('download')
         
     previewContent.classList.remove('scale')
     domtoimage.toPng(previewContent)
