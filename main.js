@@ -57,7 +57,8 @@ function preview(){
     previewContent = document.querySelector('#preview div.cover')
 
     let modal_preview = document.getElementById('modal_preview'),
-        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0]
+        modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
+        modal_download = modal_preview_body.getElementById('download')
         
     previewContent.classList.remove('scale')
     domtoimage.toPng(previewContent)
@@ -67,6 +68,8 @@ function preview(){
             // document.body.appendChild(img);
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
+            modal_download.href = dataUrl
+            modal_download.download = 'kustomNama'
             previewContent.classList.add('scale')
         })
         .catch(function (error) {
