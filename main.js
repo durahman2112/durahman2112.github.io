@@ -59,7 +59,8 @@ function preview(){
     let modal_preview = document.getElementById('modal_preview'),
         modal_preview_body = modal_preview.getElementsByClassName("modal-body")[0],
         modal_download = document.getElementById('download'),
-        p_judulContent = document.querySelector('#preview p.judul-content').innerText,
+        p_judulContent = document.querySelector('#preview p.judul-content'),
+        p_judulContent_innerText = p_judulContent === null ? '' : p_judulContent.innerText,
         today = new Date()
         
     previewContent.classList.remove('scale')
@@ -71,7 +72,7 @@ function preview(){
 
             modal_preview_body.innerHTML = `<img class='img-fluid' src='${dataUrl}'>`
             modal_download.href = dataUrl
-            modal_download.download = p_judulContent.replace(/\s+/g, '') + today.getDate() + (today.getMonth() + 1) + today.getFullYear() + '.png'
+            modal_download.download = p_judulContent_innerText.replace(/\s+/g, '') + today.getDate() + (today.getMonth() + 1) + today.getFullYear() + '.png'
             previewContent.classList.add('scale')
         })
         .catch(function (error) {
